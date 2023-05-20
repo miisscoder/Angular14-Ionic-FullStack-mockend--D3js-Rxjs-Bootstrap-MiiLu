@@ -19,12 +19,11 @@ log.txt
 
 # Ionic
 /.ionic
-/www
+
 /platforms
 /plugins
 
 # Compiled output
-/dist
 /tmp
 /out-tsc
 /bazel-out
