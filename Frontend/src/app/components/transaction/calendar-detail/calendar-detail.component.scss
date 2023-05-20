@@ -1,0 +1,76 @@
+@import 'src/styles/font';
+/*ion-content*/
+:host {
+  position: relative;
+  border-top-left-radius: 0.42rem;
+  border-top-right-radius: 0.42rem;
+
+
+  .bottom-card {
+    position: relative;
+    background: #ffffff;
+    -webkit-margin-start: 0;
+    margin-inline-start: 0;
+    -webkit-margin-end: 0;
+    margin-inline-end: 0;
+    border-radius: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-top-left-radius: 0.42rem;
+    border-top-right-radius: 0.42rem;
+
+
+    ion-card-content {
+      line-height: normal;
+      height: 100%;
+      overflow: auto;
+      --border: none;
+      -webkit-padding-start: 0;
+      padding-inline-start: 0;
+      -webkit-padding-end: 0;
+      padding-inline-end: 0;
+      padding: 0.42rem 0.42rem;
+
+      .tr {
+        border-bottom: 1px solid #cccccc;
+        padding: 0.22rem 0;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        .td-0 {
+          .icon {
+            width: 0.9rem;
+            height: 0.9rem;
+          }
+        }
+
+        .td-1 {
+          padding-left: 0.4rem;
+          text-align: left;
+
+          .title {
+            font-size: 0.43rem;
+            font-weight: bold;
+            color: #494949;
+            font-family: 'Quicksand-Bold';
+            text-transform: uppercase;
+          }
+
+          .category {
+            font-size: 0.36rem;
+            color: #939393;
+          }
+        }
+
+        .td-2 {
+          font-size: 0.43rem;
+          color: #939393;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

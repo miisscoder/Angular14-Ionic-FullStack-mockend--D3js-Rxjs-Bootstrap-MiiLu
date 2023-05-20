@@ -1,0 +1,22 @@
+
+<div class="list-item"
+     [ngStyle]="{'opacity': disabled ?  '0.5': '1'}">
+    <ion-label>{{title}}</ion-label> 
+    <div class="flex space-between middle
+                     dropdown-controller"
+         (click)="expand = disabled ? expand : !expand">
+        <div>{{selected}}</div>
+        <i class="icon-dropdown"
+           [ngStyle]="{'transform': expand ?
+                   'rotate(180deg)': 'rotate(0deg)'}"></i>
+    </div>
+    <div *ngIf="expand && !disabled" class="dropdown-content">
+        <div *ngFor="let item of options;let i = index"
+             class="flex space-between middle dropdown-content-item"
+             (click)="onSelect(i)">
+            <div [ngStyle]="{'color': item === selected ?  '#08a5e1' : '#484848',
+                         'font-weight': item === selected ? '800' : 'normal'}">{{item}}</div>
+            <i *ngIf="item === selected" class="icon-check"></i>
+        </div>
+    </div>
+</div>

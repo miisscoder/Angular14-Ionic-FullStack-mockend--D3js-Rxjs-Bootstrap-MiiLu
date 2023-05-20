@@ -1,0 +1,39 @@
+@import 'src/styles/font';
+/*ion-content*/
+ion-content {
+  position: relative;
+  margin-top: 0.92rem;
+
+  app-top-nav {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+  }
+
+  app-page-title {
+    ::ng-deep {
+      .title-nav {
+        padding-top: 2rem;
+      }
+    }
+  }
+
+
+  ion-slide {
+    display: block;
+    padding: 0 0.42rem;
+  }
+}
+
+.sliding-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    background: #ffffff;
+    opacity: 0.75;
+}
+ 

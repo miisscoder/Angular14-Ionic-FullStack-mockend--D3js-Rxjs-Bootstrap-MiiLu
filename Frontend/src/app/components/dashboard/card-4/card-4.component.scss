@@ -1,0 +1,30 @@
+
+
+.detail-card {
+    height: 2.8rem;
+    margin: 0 0.41rem 0.35rem;
+
+    .detail-item {
+        text-align: center;
+        width: 50%;
+        height: 70%;
+
+        .title {
+            font-size: 0.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .number {
+            font-size: 0.7rem;
+
+            &.red-number {
+                color: #ff6633;
+            }
+        }
+
+        &:first-child {
+            border-right:0.01rem solid #cccccc;
+        }
+    }
+}

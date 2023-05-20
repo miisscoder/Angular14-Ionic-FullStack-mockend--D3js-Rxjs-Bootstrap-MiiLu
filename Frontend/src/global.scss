@@ -1,0 +1,239 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+@import '~bootstrap-slider/dist/css/bootstrap-slider.min.css';
+
+@import 'styles/flex';
+@import 'styles/font';
+@import 'styles/icons';
+@import 'styles/mixins';
+@import 'styles/props';
+body {
+    color: #484848;
+}
+
+* {
+    font-family: Quicksand;
+    letter-spacing:0;
+    box-sizing: border-box;
+}
+
+#buttons {
+    text {
+        font-family: Quicksand-Bold;
+        color: #484848;
+    }
+}
+
+.text-ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.sc-ion-card-ios-h {
+    -webkit-box-shadow: 0 0 0.02rem rgba(0,0,0,.12);
+    box-shadow: 0 0 0.02rem rgba(0,0,0,.12);
+}
+
+ion-slides.swiper-container {
+    overflow: visible;
+}
+
+ion-slides.swiper-container .swiper-wrapper {
+    align-items: center;
+}
+
+ion-slides.swiper-container .swiper-wrapper ion-slide {
+    justify-content: flex-start;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -0.1rem;
+}
+
+.transactions {
+    .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+        top: -3.3rem;
+        z-index: 0;
+    }
+
+    ion-slides.swiper-container .swiper-wrapper {
+        align-items: flex-start;
+    }
+}
+
+.view {
+  .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    top: -0.24rem;
+    z-index: 0;
+  }
+}
+
+a {
+    text-decoration: none;
+}
+
+#barChart {
+    text {
+        font-size: 0.36rem;
+        color: #484848;
+    }
+}
+
+
+ion-card, .sc-ion-card-md-h {
+    box-shadow: 0 0 0.02rem 0.02rem rgba(0,0,0, 0.1);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #08a5e1;
+}
+
+.filter-app {
+    ion-backdrop {
+        opacity: 0.85;
+        --backdrop-opacity: 0.85;
+    }
+
+    .picker-wrapper {
+        opacity: 1;
+        height: 9.3rem;
+        width: calc(100% - 0.42rem * 2);
+        bottom: 0rem;
+        overflow: visible;
+        background: transparent;
+        border: none;
+
+        .picker-toolbar {
+            --height: 2.6rem;
+            height: 2.6rem;
+            padding: 0;
+            flex-wrap: wrap;
+            border-top-left-radius: 0.15rem;
+            border-top-right-radius: 0.15rem;
+            padding-left: 0.42rem;
+            padding-right: 0.42rem;
+            justify-content: center;
+            background: #ffffff;
+            overflow: visible;
+            contain: none;
+            border-bottom: none;
+
+            .picker-toolbar-button {
+                width: calc(50vw - 0.42rem * 2);
+                --width: calc(50vw - 0.42rem * 2);
+                --height: 1.3rem;
+                height: 1.3rem;
+                -webkit-padding-start: 0;
+                padding-inline-start: 0;
+                -webkit-padding-end: 0;
+                padding-inline-end: 0;
+                border-bottom:0.01rem solid #f1f1f1;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                overflow: visible;
+
+                .picker-button {
+                    height: 1.3rem;
+                    line-height: 1.3rem;
+                    margin: 0;
+                    color: #494949;
+                    -webkit-padding-start: 0;
+                    padding-inline-start: 0;
+                    -webkit-padding-end: 0;
+                    padding-inline-end: 0;
+                    font-size: 0.43rem;
+                    width: calc(50vw - 0.42rem * 2);
+                    --width: calc(50vw - 0.42rem * 2);
+                }
+
+                &:nth-of-type(2n + 1) {
+
+                    .picker-button {
+                        text-align: left;
+                        font-weight: bold;
+                    }
+                }
+
+                &:nth-of-type(2n) {
+                    .picker-button {
+                        text-align: right;
+                    }
+                }
+
+                &:nth-of-type(2), &:nth-of-type(4) {
+                    .picker-button {
+                        text-transform: capitalize;
+                    }
+                }
+
+                &:nth-last-of-type(1), &:nth-last-of-type(2) {
+                    position: absolute;
+                    top: 7.6rem;
+                    z-index: 1000;
+                    background-color: #ffffff;
+                    border: none;
+                    width: calc(50vw - 0.42rem );
+                    --width: calc(50vw - 0.42rem );
+
+                    .picker-button {
+                        color: #08a5e1;
+                        font-weight: bold;
+                        text-align: center;
+                        font-size: 0.5rem;
+                        width: calc(50vw - 0.42rem );
+                        --width: calc(50vw - 0.42rem );
+                    }
+
+                    &:nth-last-of-type(1) {
+                        right: 0;
+                        border-bottom-right-radius:0.1rem;
+                        border-top-right-radius:0.1rem;
+                    }
+
+                    &:nth-last-of-type(2) {
+                        left: 0;
+                        border-bottom-left-radius:0.1rem;
+                        border-top-left-radius:0.1rem;
+                    }
+                }
+            }
+        }
+
+        .picker-columns {
+            border-bottom-left-radius: 0.15rem;
+            border-bottom-right-radius: 0.15rem;
+            height: 4.6rem;
+            background: #ffffff;
+
+            .picker-col {
+                -webkit-padding-start: 0;
+                padding-inline-start: 0;
+                -webkit-padding-end: 0;
+                padding-inline-end: 0;
+
+                .picker-opt.picker-opt-selected {
+                    background-color: rgba(8, 165, 225, 0.1);
+                    color: #484848;
+                }
+            }
+
+            .picker-above-highlight, .picker-below-highlight{
+                border:none;
+            }
+        }
+    }
+}
+
+

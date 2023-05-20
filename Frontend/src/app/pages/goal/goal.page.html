@@ -1,0 +1,9 @@
+<ion-content>
+    <app-top-nav left="menu" right="back"></app-top-nav>
+    <app-page-title data="Goals"></app-page-title>
+    <ion-list> 
+        <app-list-item-sliding [data]="item" 
+                               *ngFor="let item of data;let i = index;">
+        </app-list-item-sliding>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-content> 
+    <app-top-nav left = "back" right="save"
+                  (save)="onSave()"></app-top-nav>
+    <app-page-title data="Set Alert"></app-page-title>
+    <div class="list">
+        <app-list-item-dropdown title="BUDGET HEAD"
+                                [options]="optionsBudget"
+                                [selected]="selectedBudget"
+                                (select)="onSelectBudget($event)"></app-list-item-dropdown>
+        <app-list-item-dropdown title="CATEGORY"
+                                [disabled]="selectedBudget === 'Overall'"
+                                [options]="optionsCategory"
+                                [selected]="selectedCategory"
+                                (select)="onSelectCategory($event)" ></app-list-item-dropdown>
+      
+        <app-list-item-slider [sliderValue]="sliderValue" (change)="onChange($event)"></app-list-item-slider>
+    </div>
+</ion-content>

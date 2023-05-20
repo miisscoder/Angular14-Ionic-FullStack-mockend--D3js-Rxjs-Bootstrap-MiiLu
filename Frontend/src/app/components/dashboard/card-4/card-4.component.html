@@ -1,0 +1,18 @@
+ 
+<ion-card *ngIf="data?.budgetSet"
+          class="detail-card flex space-between middle">
+    <div class="detail-item flex column space-around">
+        <div class="title">My Budget</div>
+        <div class="number">${{numberWithCommas(data?.myBudget)}}</div>
+    </div>
+    <div class="detail-item flex column space-around"
+         *ngIf="getNumber(data?.percentage) >= 0 ">
+        <div class="title">Remaining</div>
+        <div class="number">${{numberWithCommas(data?.remaining)}}</div>
+    </div>
+    <div class="detail-item flex column space-around"
+         *ngIf="getNumber(data?.percentage) < 0 ">
+        <div class="title">Over budget by</div>
+        <div class="number red-number">${{numberWithCommas(data?.overBudgetBy)}}</div>
+    </div>
+</ion-card> 

@@ -1,0 +1,40 @@
+
+.ion-item {
+    padding-top: 0.5rem;
+    color: #484848;
+ 
+    ion-label {
+        font-size: 0.35rem;
+        line-height: 0.35rem;
+        display: block;
+        margin-bottom: 0.1rem;
+        font-family: 'Quicksand-Bold';
+        color: #484848;
+    } 
+
+    ion-input {
+        display: block;
+        font-size: 0.5rem;
+        --padding-start: 0;
+        margin-bottom: 0.1rem;
+        border-bottom:0.01rem solid #e4e4e4;
+        color: #484848;
+        font-weight: normal;
+        font-family: inherit;
+
+        &.amount {
+            font-size: 0.72rem;
+            --padding-start: 0.3rem;
+            position: relative;
+
+            &:before {
+                content: '$';
+                font-size: 0.43rem;
+                position: absolute;
+                top: 0.22rem;
+                left: 0;
+            }
+        }
+    } 
+
+}

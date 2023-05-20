@@ -1,0 +1,30 @@
+
+<ion-item-sliding >
+    <ion-item>
+        <i class="icon icon-dots"></i> 
+        <app-list-item-sliding-card [data]="data"></app-list-item-sliding-card>
+    </ion-item>
+    <ion-item-options side="end">
+        <ion-item-option>
+            <a routerLink="/goal/set" class="option-content">
+                <i class="icon icon-add"></i>
+                <div class="operation-label">Add</div>
+                <div class="operation-label">Funds</div>
+            </a>
+        </ion-item-option>
+        <ion-item-option>
+            <div class="option-content ">
+                <i class="icon icon-close"></i>
+                <div class="operation-label">Tranfer</div>
+                <div class="operation-label">& Close</div>
+            </div>
+        </ion-item-option>
+        <ion-item-option class="flex column center">
+            <div class="option-content">
+                <i class="icon icon-facebook"></i>
+                <div class="operation-label">Share on</div>
+                <div class="operation-label"> Facebook</div>
+            </div>
+        </ion-item-option>
+    </ion-item-options>
+</ion-item-sliding>

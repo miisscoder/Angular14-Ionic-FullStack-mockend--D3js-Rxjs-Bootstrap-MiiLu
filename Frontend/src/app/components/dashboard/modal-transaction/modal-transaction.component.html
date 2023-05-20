@@ -1,0 +1,32 @@
+
+<div class="sliding-cover"
+     (click)="onHideModal()"></div>
+<div #modal class="bottom-sliding-content">
+    <ion-card class="bottom-card">
+        <a href="javascript:;" (click)="onHideModal()">
+            <i class="icon-blue-close"></i>
+        </a>
+        <ion-card-title>Why i am red?</ion-card-title>
+        <p>
+            Lorem ipsum dolor sit amet, comsectetuer
+            adipscing elt, sed diam nonummy nibh.
+        </p>
+        <ion-card-subtitle>{{data?.transactions?.length + ' largest transactions'}}</ion-card-subtitle>
+        <div class="list-items">
+            <div *ngFor="let item of data?.transactions; let i = index;"
+                 class="flex space-between middle list-item">
+                <div class="flex start middle">
+                    <div class="date">{{item.date}}</div>
+                    <i class="icons icon-{{getIconClass(item.type)}}"
+                       [style.width.px]="0.083 * width"
+                       [style.height.px]="0.083 * width"></i>
+                    <div class="">
+                        <div class="title">{{item.title}}</div>
+                        <div class="type">{{item.type}}</div>
+                    </div>
+                </div>
+                <div class="money">${{item.money}}</div>
+            </div>
+        </div>
+    </ion-card>
+</div>     

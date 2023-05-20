@@ -1,0 +1,128 @@
+﻿[
+  {
+    "card": {
+      "type": "CHECKING ACC.",
+      "number": "XXXX0015",
+      "money": 9550,
+      "url": "assets/image/card-logo-1.png"
+    },
+    "detail": {
+      "currentSpend": 9550,
+      "typicalSpend": 78,
+      "budgetSet": false,
+      "percentage": "",
+      "warning": false,
+      "myBudget": 0,
+      "remaining": 0
+    }
+  },
+  {
+    "card": {
+      "type": "CREDIT CARD",
+      "number": "XXXX0015",
+      "money": 8550,
+      "url": "assets/image/card-logo-1.png"
+    },
+    "detail": {
+      "currentSpend": 8550,
+      "typicalSpend": 78,
+      "budgetSet": true,
+      "percentage": "75%",
+      "warning": false,
+      "myBudget": 5450,
+      "remaining": 4088
+    }
+  },
+  {
+    "card": {
+      "type": "CREDIT CARD",
+      "number": "XXXX0015",
+      "money": 7550,
+      "url": "assets/image/card-logo-1.png"
+    },
+    "detail": {
+      "currentSpend": 7550,
+      "typicalSpend": 110,
+      "budgetSet": true,
+      "percentage": "25%",
+      "warning": "likely-to",
+      "myBudget": 5450,
+      "remaining": 4088,
+      "transactions": [
+        {
+          "date": "11/10",
+          "type": "Shopping",
+          "title": "Hermes",
+          "money": "1650"
+        },
+        {
+          "date": "11/12",
+          "type": "Shopping",
+          "title": "Louis Vuitton",
+          "money": "750"
+        },
+        {
+          "date": "11/10",
+          "type": "Food",
+          "title": "Sushi Tei",
+          "money": "375"
+        }
+      ]
+    }
+  },
+  {
+    "card": {
+      "type": "CREDIT CARD",
+      "number": "XXXX0015",
+      "money": 6550,
+      "url": "assets/image/card-logo-1.png"
+    },
+    "detail": {
+      "currentSpend": 6550,
+      "typicalSpend": 110,
+      "budgetSet": true,
+      "percentage": "-10%",
+      "warning": "out-of-budget",
+      "myBudget": 5450,
+      "overBudgetBy": 545,
+      "transactions": [
+        {
+          "date": "11/10",
+          "type": "Shopping",
+          "title": "Hermes",
+          "money": "1650"
+        },
+        {
+          "date": "11/12",
+          "type": "Shopping",
+          "title": "Louis Vuitton",
+          "money": "750"
+        },
+        {
+          "date": "11/10",
+          "type": "Food",
+          "title": "Sushi Tei",
+          "money": "375"
+        },
+        {
+          "date": "11/11",
+          "type": "Food",
+          "title": "Sushi Tei",
+          "money": "375"
+        },
+        {
+          "date": "11/13",
+          "type": "Food",
+          "title": "Sushi Tei",
+          "money": "375"
+        },
+        {
+          "date": "11/16",
+          "type": "Food",
+          "title": "Sushi Tei",
+          "money": "375"
+        }
+      ]
+    }
+  }
+]

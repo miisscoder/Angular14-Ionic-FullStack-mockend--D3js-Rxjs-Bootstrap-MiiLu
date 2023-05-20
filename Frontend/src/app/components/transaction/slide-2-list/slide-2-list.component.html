@@ -1,0 +1,28 @@
+
+<ion-list>
+    <div *ngFor="let item of data?.diary;let i = index">
+        <ion-item class="date">{{item?.date}}</ion-item>
+        <ion-item-sliding *ngFor="let it of item?.details;let j = index">
+            <ion-item class="detail">
+                <div class="flex space-between middle detail-content">
+                    <div class="flex start middle">
+                        <i class="icon icon-{{getIconName(it?.category)}}"></i>
+                        <div>
+                            <div class="title">{{it?.title}}</div>
+                            <div class="category">{{it?.category}}</div>
+                        </div>
+                    </div>
+                    <div class="amount"
+                         [ngStyle]="{'color': getColor(it?.category) }">
+                        ${{it?.amount}}
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item-options side="end">
+                <ion-item-option class="flex center middle">
+                    <a href="javascript" class="btn-retag">Retag</a><span>.</span><a href="javascript" class="btn-detail">Detail</a>
+                </ion-item-option>
+            </ion-item-options>
+        </ion-item-sliding>
+    </div>
+</ion-list>

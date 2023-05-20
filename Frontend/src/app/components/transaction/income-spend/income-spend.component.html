@@ -1,0 +1,16 @@
+
+<app-top-nav left="back"></app-top-nav>
+<app-page-title data="My {{getTitle()}} View" sub="{{data?.date}}"></app-page-title>
+<app-slide-single-btn [type]="type" [total]="data?.total" (clickCard)="onType('')"></app-slide-single-btn>
+<ion-slides pager="true" [options]="slideOpts">
+  <ion-slide>
+    <app-slide-3-list [data]=" data?.data"></app-slide-3-list>
+  </ion-slide>
+  <ion-slide>
+    <app-bar-chart [diaryData]="diaryData"
+                   [width]="widthBarChart" [height]="heightBarChart"></app-bar-chart>
+    <app-slide-4-chart-items [data]="getCatogeryItem()" (clickItem)="onType($event)"></app-slide-4-chart-items>
+  </ion-slide>
+</ion-slides>
+
+

@@ -1,0 +1,33 @@
+
+.chart-content {
+    text-align: left;
+    padding: 0.42rem 0.42rem;
+    margin: 0 0.42rem 0.4rem;
+
+    .icon {
+        width: 0.7rem;
+        height: 0.7rem;
+        background-size: contain;
+        background-position: center;
+        margin-right: 0.2rem;
+    }
+
+    .card-title-content {
+        margin-bottom: 0.3rem;
+
+
+        .card-title {
+            font-size: 0.5rem;
+            font-weight: bold;
+        }
+
+        .card-money {
+            font-size: 0.5rem;
+        }
+
+        .spent {
+            font-size: 0.3rem;
+            margin-left: 0.1rem;
+        }
+    }
+}

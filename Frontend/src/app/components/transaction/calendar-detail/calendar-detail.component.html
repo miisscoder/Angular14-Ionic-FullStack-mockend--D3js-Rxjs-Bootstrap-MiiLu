@@ -1,0 +1,20 @@
+<ion-card class="bottom-card">
+  <ion-card-content>
+    <div *ngFor="let item of details; let i = index;"
+         class="tr flex space-between middle">
+      <div class="flex start middle sub-tr">
+        <div class="td td-0 flex center middle">
+          <i class="icon icon-{{getIconClass(item['category'])}}"></i>
+        </div>
+        <div class="td td-1">
+          <div class="title">{{item['title']}}</div>
+          <div class="category">{{item['category']}}</div>
+        </div>
+      </div>
+      <div class="td td-2"
+           [ngStyle]="{'color': item['category'] === 'Income'
+                     || item['category'] === 'Other Income'
+                     ? '#08a5e1' : '#fb543f'}">${{item['amount']}}</div>
+    </div>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,8 @@
+
+<div class="flex space-around middle icons">
+  <div class="flex column center middle icon-box" *ngFor="let item of data">
+    <i class="icon-type icon-{{getIconName(item)}}"
+       (click)="onClick(item)"></i>
+    <div class="type-txt">{{item}}</div>
+  </div>
+</div>

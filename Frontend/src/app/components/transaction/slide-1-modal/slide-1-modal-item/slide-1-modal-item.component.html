@@ -1,0 +1,12 @@
+
+<div *ngFor="let item of data let i = index;"
+     class="it">
+  <div class="flex start middle tr tr-{{i}} " *ngIf="i < 3">
+    <div class="td td-0 ">{{item.date}}</div>
+    <div class="flex start middle sub-tr">
+      <div class="td td-1">{{item.title}}</div>
+      <div class="td td-2">{{item.percent}}%</div>
+      <div class="td td-3">${{item.amount}}</div>
+    </div>
+  </div>
+</div>

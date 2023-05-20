@@ -1,0 +1,134 @@
+﻿{
+  "income": {
+    "income": 10550,
+    "salary": 8450,
+    "otherIncome": 2100
+  },
+  "spend": {
+    "count": 300,
+    "budget": 500,
+    "items": [
+      {
+        "type": "Rent & Utilities",
+        "count": 525,
+        "budget": 800
+      },
+      {
+        "type": "Travel",
+        "count": 1525,
+        "budget": 800
+      },
+      {
+        "type": "Food",
+        "count": 525,
+        "budget": 800
+      },
+      {
+        "type": "Shopping",
+        "count": 1525,
+        "budget": 800
+      },
+      {
+        "type": "Tax",
+        "count": 525,
+        "budget": 800
+      }
+    ]
+  },
+  "borrowings": {
+    "count": 300,
+    "budget": 500,
+    "items": [
+      {
+        "type": "Rent & Utilities",
+        "count": 525,
+        "budget": 800
+      },
+      {
+        "type": "Travel",
+        "count": 525,
+        "budget": 800
+      },
+      {
+        "type": "Food",
+        "count": 525,
+        "budget": 800
+      },
+      {
+        "type": "Shopping",
+        "count": 525,
+        "budget": 800
+      },
+      {
+        "type": "Tax",
+        "count": 525,
+        "budget": 800
+      }
+    ]
+  },
+  "protection": {
+    "count": 300,
+    "budget": 500,
+    "items": [
+      {
+        "type": "Rent & Utilities",
+        "count": 525,
+        "budget": 800
+      },
+      {
+        "type": "Travel",
+        "count": 525,
+        "budget": 800
+      },
+      {
+        "type": "Food",
+        "count": 525,
+        "budget": 800
+      },
+      {
+        "type": "Shopping",
+        "count": 525,
+        "budget": 800
+      },
+      {
+        "type": "Tax",
+        "count": 525,
+        "budget": 800
+      }
+    ]
+  },
+  "growth": {
+    "count": 300,
+    "budget": 500,
+    "items": [
+      {
+        "date": "2018/11/11",
+        "percetage": 50
+      },
+      {
+        "date": "2018/11/12",
+        "percetage": 25
+      },
+      {
+        "date": "2018/11/13",
+        "percetage": 25
+      },
+      {
+        "date": "2018/11/14",
+        "percetage": 50
+      },
+      {
+        "date": "2018/11/15",
+        "percetage": 100
+      },
+      {
+        "date": "2018/11/16",
+        "percetage": 75
+      },
+      {
+        "date": "2018/11/17",
+        "percetage": 50
+      }
+    ]
+  }
+}

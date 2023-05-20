@@ -1,0 +1,25 @@
+
+<div class="flex space-between middle">
+    <ion-card class="total-card spend-card"
+              (click)="onClickCard('spend')"
+              [ngClass]="{'active': type === 'spend'}">
+        <div class="card-title">Total Spend</div>
+        <div class="flex center top amount">
+            <div class="dollar">$</div>
+            <div class="money">{{ numberWithCommas(data?.totalSpend)}}</div>
+        </div>
+    </ion-card>   
+    <app-donut-chart [data]="dataChart"
+                     [radius]="radius"
+                     imageUrl="{{type === 'spend' ? 'assets/image/icon/my-spend.png' : 'assets/image/icon/money-black-m.png'}}">
+    </app-donut-chart>
+    <ion-card class="total-card income-card"
+              (click)="onClickCard('income')"
+              [ngClass]="{'active': type !== 'spend'}">
+        <div class="card-title">Total Income</div>
+        <div class="flex center top amount">
+            <div class="dollar">$</div>
+            <div class="money">{{ numberWithCommas(data?.totalIncome)}}</div>
+        </div>
+    </ion-card>
+</div>

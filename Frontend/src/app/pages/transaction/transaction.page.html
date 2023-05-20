@@ -1,0 +1,18 @@
+<ion-content class="transactions">
+    <app-top-nav left="menu" right="filter"></app-top-nav>
+    <app-page-title data="My Transactions" sub="{{data?.date}}"></app-page-title>
+    <ion-slides pager="true" [options]="slideOpts">
+        <ion-slide>
+            <app-slide-1-btns [data]="data" (switch)="onSwitchType($event)"></app-slide-1-btns>
+            <app-slide-1-list *ngIf="type === 'spend'"
+                              [data]="data?.spend" (row)="onClickRow($event, 'spend')"></app-slide-1-list>
+            <app-slide-1-list *ngIf="type !== 'spend'"
+                              [data]="data?.income" (row)="onClickRow($event, 'income')"></app-slide-1-list>
+        </ion-slide>
+        <ion-slide>
+            <app-slide-2-btns [totalSpend]="data?.totalSpend" [totalIncome]="data?.totalIncome"></app-slide-2-btns>
+            <app-slide-2-list [data]="data"></app-slide-2-list>
+        </ion-slide>
+    </ion-slides>
+</ion-content> 
+<app-slide-1-modal [data]="slideData" (close)="slideMenuHide()"  *ngIf="slideShow"></app-slide-1-modal>

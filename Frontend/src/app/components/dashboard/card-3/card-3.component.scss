@@ -1,0 +1,57 @@
+
+.battery-card {
+  height: 2.8rem;
+  position: relative;
+  box-shadow: none;
+  margin: 0 0.41rem 0.35rem;
+
+  .bk {
+    border: 0.05rem solid #cccccc;
+    margin-left:0.08rem;
+    position: relative;
+    height: 100%;
+    border-radius: 0.05rem;
+    box-shadow: 0 0 0.02rem 0.02rem rgba(0, 0, 0, 0.1);
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 25%;
+      left: -0.12rem;
+      height: 50%;
+      width: 0.12rem;
+      display: block;
+      border-bottom-left-radius: 0.04rem;
+      border-top-left-radius: 0.04rem;
+      background: #cccccc;
+    }
+
+
+    .number {
+      font-size: 0.7rem;
+      color: #ffffff;
+      position: absolute;
+      right: calc(0.28rem - 0.05rem);
+      top: calc(50% - 0.24rem);
+    }
+  }
+
+  .percentage {
+    width: 100%;
+    margin-left:0.08rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+
+    .number {
+      font-size: 0.75rem;
+      color: #ffffff;
+      position: absolute;
+      right: 0.5rem;
+      top: calc(50% - 0.5rem);
+      opacity: 1;
+    }
+  }
+}

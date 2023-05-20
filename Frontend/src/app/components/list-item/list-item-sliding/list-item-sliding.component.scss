@@ -1,0 +1,212 @@
+
+ion-item-sliding {
+    margin-bottom: 0.42rem;
+
+
+    i.icon-dots {
+        position: absolute;
+        right: 0.17rem;
+        top: calc(50% - 0.25rem);
+        display: block;
+        width: 0.14rem;
+        height: 0.5rem;
+        z-index: 1;
+    }
+
+    ion-item {
+        position: relative;
+        border: none;
+        --inner-border-width: 0 0 0 0;
+
+        .goal-card {
+            text-align: left;
+            margin: 0;
+            width: calc(100vw - 0.42rem * 2);
+            border-radius:0.1rem;
+            margin-right: 0.07rem;
+            border:0.01rem solid rgba(245, 245, 245, 0.7);
+            overflow: hidden;
+            box-shadow: none;
+
+            .left-part {
+                width: 27.5%;
+                border-top-left-radius:0.1rem;
+                border-bottom-left-radius:0.1rem;
+
+                &.transport {
+                    background: linear-gradient(to bottom right,#08a4e1,#0383d2 );
+                }
+
+                &.travel {
+                    background: linear-gradient(to bottom right,#46c583,#29ac5e );
+                }
+
+                &.shopping {
+                    background: linear-gradient(to bottom right,#ffa600,#ff8500 );
+                }
+
+                &.electronic-products {
+                    background: linear-gradient(to bottom right,#ff5a5a,#ff3838 );
+                }
+
+                .icons {
+                    display: block;
+                    border-radius:0.05rem;
+                    width: 1.35rem;
+                    height: 1.35rem;
+                }
+            }
+
+            .right-part {
+                width: calc(100% - 27.5%);
+                padding: 0.42rem;
+                padding-bottom: 0.3rem;
+
+                .type {
+                    font-size: 0.38rem;
+                    text-transform: uppercase;
+                    font-family: 'Quicksand-Bold';
+                }
+
+                .date {
+                    color: #939393;
+                    font-size: 0.36rem;
+                }
+
+
+
+                .percentage {
+
+                    .dollar {
+                        font-size: 0.46rem;
+                        line-height: 0.46rem;
+                    }
+
+                    .number {
+                        font-size: 0.76rem;
+                        line-height: 0.76rem;
+                    }
+                }
+
+                .goal {
+                    color: #939393;
+                }
+
+                .progress {
+                    height: 0.23rem;
+                    width: 100%;
+                    background-color: #f8f8f8;
+                    margin: 0.5rem 0 0.32rem;
+                    border-radius: 0.15rem;
+
+                    .progress-bar {
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 0.4rem;
+
+
+                        &.transport {
+                            background: linear-gradient(to right,#0383d2,#08a4e1 );
+                        }
+
+                        &.travel {
+                            background: linear-gradient(to right,#29ac5e,#46c583 );
+                        }
+
+                        &.shopping {
+                            background: linear-gradient(to right,#ff8500,#ffa600 );
+                        }
+
+                        &.electronic-products {
+                            background: linear-gradient(to right,#ff3838,#ff5a5a );
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ion-item-options {
+        background-color: #f8f8f8;
+        padding-right: 0.4rem;
+        padding-left: 0.5rem;
+        margin-right: 0.5rem;
+        --border: none;
+        border: none;
+
+        ion-item-option {
+            background-color: transparent;
+            width: 1.8rem;
+            color: #484848;
+            text-align: center;
+            --border: none;
+            border: none;
+
+            &:first-of-type {
+                padding-left: 0.4rem;
+                width: 2.2rem;
+            }
+
+            &:host {
+                background-color: #ffffff;
+            }
+
+            .option-content {
+                width: 1.8rem;
+                height: 3.1rem;
+                display: block;
+                color: inherit;
+            }
+
+            i {
+                width: 0.75rem;
+                height: 0.75rem;
+                display: block;
+                margin: 0 auto;
+                background-size: auto 100%;
+            }
+
+            &:first-of-type .icon {
+                width: 0.6rem;
+                height: 0.6rem;
+                display: block;
+                margin-top: 0.76rem;
+                margin-bottom: 0.54rem;
+            }
+
+            &:nth-of-type(2) .icon {
+                width: 0.56rem;
+                height: 0.64rem;
+                margin-top: 0.76rem;
+                margin-bottom: 0.52rem;
+            }
+
+            &:last-of-type .icon {
+                width: 0.78rem;
+                height: 0.78rem;
+                margin-top: 0.7rem;
+                margin-bottom: 0.4rem;
+            }
+
+            .operation-label {
+                display: block;
+                font-size: 0.35rem;
+                text-transform: none;
+                text-align: center;
+                width: 100%;
+                font-weight: bold;
+            }
+
+            &:first-of-type .operation-label {
+            }
+
+            &:nth-of-type(2) .operation-label {
+                color: #fb543f;
+            }
+
+            &:last-of-type .operation-label {
+                color: #08a5e1;
+            }
+        }
+    }
+}

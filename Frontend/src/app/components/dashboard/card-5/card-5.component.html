@@ -1,0 +1,11 @@
+
+<ion-card class="set-budget-card flex column center"
+          *ngIf="!data?.budgetSet">
+    <i class="icon-money"></i>
+    <div class="text-set">
+        Set up your budget to get a budget<br />
+        summary view here.
+    </div>
+    <a href="javascript:;" class="btn-blue"
+       [routerDirection]="'root'" routerLink="/budget">Set My Budget</a>
+</ion-card>

@@ -1,0 +1,143 @@
+@import 'src/styles/font';
+/*ion-content*/
+ion-content {
+  position: relative;
+  color: #484848;
+
+  ion-list {
+    padding: 0 0.42rem ;
+    margin-bottom:3rem;
+    color: #484848;
+
+    .ion-item {
+      padding-top: 0.5rem;
+      color: #484848;
+
+      &.half {
+        width: 45%;
+        margin-top: 0.13rem;
+      }
+
+      &.funding {
+        margin-top: 0.7rem;
+      }
+
+      ion-label {
+        font-size: 0.35rem;
+        line-height: 0.35rem;
+        display: block;
+        margin-bottom: 0.1rem;
+        font-family: 'Quicksand-Bold';
+        color: #484848;
+      }
+
+
+
+      ion-input {
+        display: block;
+        font-size: 0.5rem;
+        --padding-start: 0;
+        margin-bottom: 0.1rem;
+        border-bottom:0.01rem solid #e4e4e4;
+        color: #484848;
+        font-weight: normal;
+        font-family: inherit;
+
+        &.amount {
+          font-size: 0.72rem;
+          --padding-start: 0.3rem;
+          position: relative;
+
+          &:before {
+            content: '$';
+            font-size: 0.43rem;
+            position: absolute;
+            top: 0.22rem;
+            left: 0;
+          }
+        }
+      }
+
+      ion-datetime-button {
+        font-size: 0.5rem;
+        border-bottom:0.01rem solid #e4e4e4;
+        --padding-start: 0;
+        padding-bottom: 0.1rem;
+        color: #484848;
+        justify-content: flex-start;
+        --ion-color-step-300: transparent;
+        margin-left: -0.12rem;
+      }
+
+      .dropdown-controller {
+        font-size: 0.5rem;
+        line-height: 0.5rem;
+        border-bottom:0.01rem solid #e4e4e4;
+        padding-bottom: 0.4rem;
+        padding-top: 0.4rem;
+
+        .icon-dropdown {
+          width: 0.3rem;
+          height: 0.3rem;
+          background-size: 100% auto;
+          background-position: center;
+        }
+      }
+
+      .dropdown-content {
+        font-size: 0.5rem;
+        line-height: 0.5rem;
+        padding-left: 0.42rem;
+        padding-top: 0.45rem;
+        padding-bottom: 0.3rem;
+
+        .icon-check {
+          width: 0.4rem;
+          height: 0.4rem;
+          background-size: contain;
+          background-position: center;
+        }
+
+        .dropdown-content-item {
+          height: 1rem;
+          line-height: 1rem;
+        }
+      }
+
+      .slider-value {
+        font-size: 0.5rem;
+        padding-bottom: 1.25rem;
+      }
+    }
+  }
+
+  .set-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.7rem;
+    color: #ffffff;
+    padding: 0 0.42rem;
+    background: linear-gradient(to bottom, #08a5e1, #0382d2);
+    z-index:-1;
+
+    .monthly {
+      font-size: 0.45rem;
+      font-weight: bold;
+    }
+
+    .contribution {
+      font-size: 0.75rem;
+      position: relative;
+
+      &:before {
+        content: '$';
+        position: absolute;
+        top: 0;
+        left: -0.2rem;
+        font-size: 0.4rem;
+      }
+    }
+  }
+}

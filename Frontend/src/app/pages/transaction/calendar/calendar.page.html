@@ -1,0 +1,18 @@
+<ion-content>
+  <app-top-nav left="back"></app-top-nav>
+  <app-page-title [data]="data?.date"></app-page-title>
+
+  <app-slide-2-btns [totalSpend]="data?.totalSpend" [totalIncome]="data?.totalIncome" *ngIf="!slideShow">
+  </app-slide-2-btns>
+  <app-calendar-widget [slideShow]="slideShow" [monthData]="monthData" (selectedMonthDataEmiter)="popDayDetail($event)"></app-calendar-widget>
+
+ 
+  <div class="sliding-cover" *ngIf="slideShow"
+       (click)="slideMenuHide()"></div>
+
+  <div #sliding class="bottom-sliding-content"
+       [ngStyle]="{ display: slideShow ? 'block' : 'none'}">
+    <app-calendar-detail [details]= "details">
+    </app-calendar-detail>
+  </div>
+</ion-content>

@@ -1,0 +1,23 @@
+
+<ion-slides pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let card of data; let i = index"
+               [ngClass]="{'active':  activeCard === i}">
+        <ion-card [id]="i"
+                  class="bank-card flex column column-space-between"
+                  [ngClass]="{'green': card.type === 'CHECKING ACC.',
+                      'orange': card.type === 'CREDIT CARD',
+                      'active' : activeCard === i}"
+                  [style.height.rem]="activeCard === i ? 3: 2.7"
+                  [style.width.rem]="activeCard === i ? 4.95: 4.5"
+                  (click)="onChangeCardSlides(i)">
+            <div>   
+                <div class="type">{{card?.type}}</div>
+                <div class="number">{{card?.number}}</div>
+            </div>
+            <div class="flex space-between middle card-bottom">
+                <img [src]="card.url" />
+                <div class="flex end top"><div class="dollar">$</div><div class="money">{{card?.money}}</div></div>
+            </div>
+        </ion-card>
+    </ion-slide>
+</ion-slides>

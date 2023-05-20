@@ -1,0 +1,13 @@
+<ion-content #buttons>
+    <app-top-nav left="menu"></app-top-nav>
+    <app-page-title data="My Spend Dashboard"></app-page-title>
+    <app-card-slides [data]="cards" [activeCard]="activeCard" (change)="onChangeCardSlides($event)"></app-card-slides>
+    <app-card-1 [data]="details[activeCard]"></app-card-1>
+    <app-card-2 [data]="details[activeCard]" (modal)="onShowModal()"></app-card-2>
+    <app-card-3 [data]="details[activeCard]"></app-card-3>
+    <app-card-4 [data]="details[activeCard]"></app-card-4>
+    <app-card-5 [data]="details[activeCard]"></app-card-5>
+</ion-content>
+<app-modal-transaction *ngIf="modalShow"
+                       [data]="details[activeCard]"
+                       (hide)="onHideModal()"></app-modal-transaction>

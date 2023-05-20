@@ -1,0 +1,1078 @@
+﻿{
+  "app": {
+    "name": "Bunga Jelitha",
+    "image": "assets/image/user.png",
+    "notifications": 2,
+    "budgetLeft": 4088
+  },
+  "budget": {
+    "income": {
+      "income": 10550,
+      "salary": 8450,
+      "otherIncome": 2100
+    },
+    "spend": {
+      "count": 300,
+      "budget": 500,
+      "items": [
+        {
+          "type": "Rent & Utilities",
+          "count": 525,
+          "budget": 800
+        },
+        {
+          "type": "Travel",
+          "count": 1525,
+          "budget": 800
+        },
+        {
+          "type": "Food",
+          "count": 525,
+          "budget": 800
+        },
+        {
+          "type": "Shopping",
+          "count": 1525,
+          "budget": 800
+        },
+        {
+          "type": "Tax",
+          "count": 525,
+          "budget": 800
+        }
+      ]
+    },
+    "borrowings": {
+      "count": 300,
+      "budget": 500,
+      "items": [
+        {
+          "type": "Rent & Utilities",
+          "count": 525,
+          "budget": 800
+        },
+        {
+          "type": "Travel",
+          "count": 525,
+          "budget": 800
+        },
+        {
+          "type": "Food",
+          "count": 525,
+          "budget": 800
+        },
+        {
+          "type": "Shopping",
+          "count": 525,
+          "budget": 800
+        },
+        {
+          "type": "Tax",
+          "count": 525,
+          "budget": 800
+        }
+      ]
+    },
+    "protection": {
+      "count": 300,
+      "budget": 500,
+      "items": [
+        {
+          "type": "Rent & Utilities",
+          "count": 525,
+          "budget": 800
+        },
+        {
+          "type": "Travel",
+          "count": 525,
+          "budget": 800
+        },
+        {
+          "type": "Food",
+          "count": 525,
+          "budget": 800
+        },
+        {
+          "type": "Shopping",
+          "count": 525,
+          "budget": 800
+        },
+        {
+          "type": "Tax",
+          "count": 525,
+          "budget": 800
+        }
+      ]
+    },
+    "growth": {
+      "count": 300,
+      "budget": 500,
+      "items": [
+        {
+          "date": "2018/11/11",
+          "percetage": 50
+        },
+        {
+          "date": "2018/11/12",
+          "percetage": 25
+        },
+        {
+          "date": "2018/11/13",
+          "percetage": 25
+        },
+        {
+          "date": "2018/11/14",
+          "percetage": 50
+        },
+        {
+          "date": "2018/11/15",
+          "percetage": 100
+        },
+        {
+          "date": "2018/11/16",
+          "percetage": 75
+        },
+        {
+          "date": "2018/11/17",
+          "percetage": 50
+        }
+      ]
+    }
+  },
+  "calendar": {
+    "date": "November 2019",
+    "totalSpend": 5000,
+    "totalIncome": 10000,
+    "monthData": [
+      {
+        "month": "November",
+        "year": "2019",
+        "days": [
+          {
+            "date": 26,
+            "spend": [
+              {
+                "title": "Panda express",
+                "category": "Food",
+                "amount": 10
+              },
+              {
+                "title": "Zara",
+                "category": "Shopping",
+                "amount": 90
+              }
+            ],
+            "income": [
+              {
+                "title": "Salary",
+                "category": "Income",
+                "amount": 10
+              },
+              {
+                "title": "Other Income",
+                "category": "Other Income",
+                "amount": 90
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "December",
+        "year": "2019",
+        "days": [
+          {
+            "date": 26,
+            "spend": [
+              {
+                "title": "Panda express",
+                "category": "Food",
+                "amount": 10
+              },
+              {
+                "title": "Zara",
+                "category": "Shopping",
+                "amount": 290
+              },
+              {
+                "title": "PAZZO",
+                "category": "Shopping",
+                "amount": 690
+              },
+              {
+                "title": "CHUU",
+                "category": "Shopping",
+                "amount": 190
+              },
+              {
+                "title": "Pull&Bear",
+                "category": "Shopping",
+                "amount": 290
+              }
+            ],
+            "income": [
+              {
+                "title": "Salary",
+                "category": "Income",
+                "amount": 10
+              },
+              {
+                "title": "Other Income",
+                "category": "Other Income",
+                "amount": 190
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "dashboard": [
+    {
+      "card": {
+        "type": "CHECKING ACC.",
+        "number": "XXXX0015",
+        "money": 9550,
+        "url": "assets/image/card-logo-1.png"
+      },
+      "detail": {
+        "currentSpend": 9550,
+        "typicalSpend": 78,
+        "budgetSet": false,
+        "percentage": "",
+        "warning": false,
+        "myBudget": 0,
+        "remaining": 0
+      }
+    },
+    {
+      "card": {
+        "type": "CREDIT CARD",
+        "number": "XXXX0015",
+        "money": 8550,
+        "url": "assets/image/card-logo-1.png"
+      },
+      "detail": {
+        "currentSpend": 8550,
+        "typicalSpend": 78,
+        "budgetSet": true,
+        "percentage": "75%",
+        "warning": false,
+        "myBudget": 5450,
+        "remaining": 4088
+      }
+    },
+    {
+      "card": {
+        "type": "CREDIT CARD",
+        "number": "XXXX0015",
+        "money": 7550,
+        "url": "assets/image/card-logo-1.png"
+      },
+      "detail": {
+        "currentSpend": 7550,
+        "typicalSpend": 110,
+        "budgetSet": true,
+        "percentage": "25%",
+        "warning": "likely-to",
+        "myBudget": 5450,
+        "remaining": 4088,
+        "transactions": [
+          {
+            "date": "11/10",
+            "type": "Shopping",
+            "title": "Hermes",
+            "money": "1650"
+          },
+          {
+            "date": "11/12",
+            "type": "Shopping",
+            "title": "Louis Vuitton",
+            "money": "750"
+          },
+          {
+            "date": "11/10",
+            "type": "Food",
+            "title": "Sushi Tei",
+            "money": "375"
+          }
+        ]
+      }
+    },
+    {
+      "card": {
+        "type": "CREDIT CARD",
+        "number": "XXXX0015",
+        "money": 6550,
+        "url": "assets/image/card-logo-1.png"
+      },
+      "detail": {
+        "currentSpend": 6550,
+        "typicalSpend": 110,
+        "budgetSet": true,
+        "percentage": "-10%",
+        "warning": "out-of-budget",
+        "myBudget": 5450,
+        "overBudgetBy": 545,
+        "transactions": [
+          {
+            "date": "11/10",
+            "type": "Shopping",
+            "title": "Hermes",
+            "money": "1650"
+          },
+          {
+            "date": "11/12",
+            "type": "Shopping",
+            "title": "Louis Vuitton",
+            "money": "750"
+          },
+          {
+            "date": "11/10",
+            "type": "Food",
+            "title": "Sushi Tei",
+            "money": "375"
+          },
+          {
+            "date": "11/11",
+            "type": "Food",
+            "title": "Sushi Tei",
+            "money": "375"
+          },
+          {
+            "date": "11/13",
+            "type": "Food",
+            "title": "Sushi Tei",
+            "money": "375"
+          },
+          {
+            "date": "11/16",
+            "type": "Food",
+            "title": "Sushi Tei",
+            "money": "375"
+          }
+        ]
+      }
+    }
+  ],
+  "goal": [
+    {
+      "name": "BMW Car",
+      "category": "Transport",
+      "amount": 2550,
+      "completionDate": "Dec 1, 2020",
+      "goal": 10100
+    },
+    {
+      "name": "Cancun Holidays",
+      "category": "Travel",
+      "amount": 450,
+      "completionDate": "Dec 1, 2019",
+      "goal": 900
+    },
+    {
+      "name": "Iphone X",
+      "category": "Electronic Products",
+      "amount": 300,
+      "completionDate": "Dec 1, 2018",
+      "goal": 1200
+    },
+    {
+      "name": "Cancun Holidays",
+      "category": "Shopping",
+      "amount": 250,
+      "completionDate": "Dec 1, 2019",
+      "goal": 500
+    }
+  ],
+  "income": {
+    "date": "Nov 01~30, 2017",
+    "total": 10000,
+    "data": [
+      {
+        "category": "Salary",
+        "percent": 30,
+        "amount": 3000
+      },
+      {
+        "category": "Other Income",
+        "percent": 70,
+        "amount": 7000
+      }
+    ],
+    "diary": [
+      {
+        "date": "11/11",
+        "details": [
+          {
+            "title": "Salary",
+            "category": "Salary",
+            "amount": 3000
+          },
+          {
+            "title": "Other Income",
+            "category": "Other Income",
+            "amount": 1000
+          }
+        ]
+      },
+      {
+        "date": "11/12",
+        "details": [
+          {
+            "title": "Other Income",
+            "category": "Other Income",
+            "amount": 2000
+          }
+        ]
+      },
+      {
+        "date": "11/13",
+        "details": [
+          {
+            "title": "Other Income",
+            "category": "Other Income",
+            "amount": 1500
+          }
+        ]
+      },
+      {
+        "date": "11/14",
+        "details": [
+        ]
+      },
+      {
+        "date": "11/15",
+        "details": [
+          {
+            "title": "Other Income",
+            "category": "Other Income",
+            "amount": 1200
+          }
+        ]
+      },
+      {
+        "date": "11/16",
+        "details": [
+          {
+            "title": "Other Income",
+            "category": "Other Income",
+            "amount": 1300
+          }
+        ]
+      },
+      {
+        "date": "11/17",
+        "details": [
+        ]
+      }
+    ]
+  },
+  "setAlert": {
+    "selectedBudget": "My Spend",
+    "items": [
+      {
+        "budgetHead": "Overall",
+        "category": "",
+        "notify": "50%"
+      },
+      {
+        "budgetHead": "My Income",
+        "category": "Risk Type",
+        "notify": "20%"
+      },
+      {
+        "budgetHead": "My Spend",
+        "category": "Consolodated",
+        "notify": "50%"
+      },
+      {
+        "budgetHead": "My Borrowings",
+        "category": "Risk Type",
+        "notify": "20%"
+      },
+      {
+        "budgetHead": "My Protection",
+        "category": "Consolodated",
+        "notify": "50%"
+      }
+    ]
+  },
+  "setGoal": {
+    "category": [
+      "Travel",
+      "Transport",
+      "Shopping",
+      "Electronic Products"
+    ],
+    "dateStart": "2010-01-01",
+    "dateEnd": "2020-01-01",
+    "completionStart": "2010-01-01",
+    "completionEnd": "2030-01-01",
+    "fundingAccount": [ "123123456778890", "233123456778890" ]
+  },
+  "spend": {
+    "date": "Nov 01~30, 2017",
+    "total": 10000,
+    "data": [
+      {
+        "category": "Rent & Utilities",
+        "percent": 30,
+        "amount": 3000
+      },
+      {
+        "category": "Travel",
+        "percent": 70,
+        "amount": 7000
+      },
+      {
+        "category": "Food",
+        "percent": 70,
+        "amount": 7000
+      },
+      {
+        "category": "Shopping",
+        "percent": 70,
+        "amount": 7000
+      },
+      {
+        "category": "Tax",
+        "percent": 70,
+        "amount": 7000
+      }
+    ],
+    "diary": [
+      {
+        "date": "11/11",
+        "details": [
+          {
+            "category": "Rent & Utilities",
+            "amount": 40
+          },
+          {
+            "category": "Travel",
+            "amount": 20
+          },
+          {
+            "category": "Food",
+            "amount": 0
+          },
+          {
+            "category": "Shopping",
+            "amount": 10
+          },
+          {
+            "category": "Tax",
+            "amount": 0
+          }
+        ]
+      },
+      {
+        "date": "11/12",
+        "details": [
+          {
+            "category": "Rent & Utilities",
+            "amount": 0
+          },
+          {
+            "category": "Travel",
+            "amount": 80
+          },
+          {
+            "category": "Food",
+            "amount": 0
+          },
+          {
+            "category": "Shopping",
+            "amount": 60
+          },
+          {
+            "category": "Tax",
+            "amount": 10
+          }
+        ]
+      },
+      {
+        "date": "11/13",
+        "details": [
+          {
+            "category": "Rent & Utilities",
+            "amount": 30
+          },
+          {
+            "category": "Travel",
+            "amount": 20
+          },
+          {
+            "category": "Food",
+            "amount": 20
+          },
+          {
+            "category": "Shopping",
+            "amount": 0
+          },
+          {
+            "category": "Tax",
+            "amount": 0
+          }
+        ]
+      },
+      {
+        "date": "11/14",
+        "details": [
+          {
+            "category": "Rent & Utilities",
+            "amount": 60
+          },
+          {
+            "category": "Travel",
+            "amount": 0
+          },
+          {
+            "category": "Food",
+            "amount": 0
+          },
+          {
+            "category": "Shopping",
+            "amount": 10
+          },
+          {
+            "category": "Tax",
+            "amount": 30
+          }
+        ]
+      },
+      {
+        "date": "11/15",
+        "details": [
+          {
+            "category": "Rent & Utilities",
+            "amount": 40
+          },
+          {
+            "category": "Travel",
+            "amount": 0
+          },
+          {
+            "category": "Food",
+            "amount": 40
+          },
+          {
+            "category": "Shopping",
+            "amount": 0
+          },
+          {
+            "category": "Tax",
+            "amount": 0
+          }
+        ]
+      },
+      {
+        "date": "11/16",
+        "details": [
+          {
+            "category": "Rent & Utilities",
+            "amount": 20
+          },
+          {
+            "category": "Travel",
+            "amount": 20
+          },
+          {
+            "category": "Food",
+            "amount": 10
+          },
+          {
+            "category": "Shopping",
+            "amount": 20
+          },
+          {
+            "category": "Tax",
+            "amount": 0
+          }
+        ]
+      },
+      {
+        "date": "11/17",
+        "details": [
+          {
+            "category": "Rent & Utilities",
+            "amount": 20
+          },
+          {
+            "category": "Travel",
+            "amount": 0
+          },
+          {
+            "category": "Food",
+            "amount": 0
+          },
+          {
+            "category": "Shopping",
+            "amount": 10
+          },
+          {
+            "category": "Tax",
+            "amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  "transactions": {
+    "date": "Nov 01~30, 2017",
+    "totalSpend": 5000,
+    "totalIncome": 10000,
+    "spend": [
+      {
+        "category": "Rent & Utilities",
+        "percent": 20,
+        "amount": 1000,
+        "details": [
+          {
+            "date": "11/11",
+            "title": "Rent 1",
+            "percent": 5,
+            "amount": 10
+          },
+          {
+            "date": "11/12",
+            "title": "Utilities 2",
+            "percent": 10,
+            "amount": 20
+          },
+          {
+            "date": "11/13",
+            "title": "Rent 3",
+            "percent": 5,
+            "amount": 10
+          },
+          {
+            "date": "11/14",
+            "title": "Utilities 4",
+            "percent": 10,
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "category": "Travel",
+        "percent": 20,
+        "amount": 1000,
+        "details": [
+          {
+            "date": "11/11",
+            "title": "Travel 1",
+            "percent": 5,
+            "amount": 10
+          },
+          {
+            "date": "11/12",
+            "title": "Travel 2",
+            "percent": 10,
+            "amount": 20
+          },
+          {
+            "date": "11/13",
+            "title": "Travel 3",
+            "percent": 10,
+            "amount": 20
+          },
+          {
+            "date": "11/14",
+            "title": "Travel 4",
+            "percent": 10,
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "category": "Food",
+        "percent": 10,
+        "amount": 500,
+        "details": [
+          {
+            "date": "11/11",
+            "title": "Panda Express",
+            "percent": 5,
+            "amount": 10
+          },
+          {
+            "date": "11/12",
+            "title": "Starbucks",
+            "percent": 10,
+            "amount": 20
+          },
+          {
+            "date": "11/13",
+            "title": "Pizza hut",
+            "percent": 10,
+            "amount": 20
+          },
+          {
+            "date": "11/14",
+            "title": "Hamburg",
+            "percent": 10,
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "category": "Shopping",
+        "percent": 15,
+        "amount": 750,
+        "details": [
+          {
+            "date": "11/11",
+            "title": "Shopping 1",
+            "percent": 5,
+            "amount": 10
+          },
+          {
+            "date": "11/12",
+            "title": "Shopping 2",
+            "percent": 10,
+            "amount": 20
+          },
+          {
+            "date": "11/13",
+            "title": "Shopping 3",
+            "percent": 10,
+            "amount": 20
+          },
+          {
+            "date": "11/14",
+            "title": "Shopping 4",
+            "percent": 10,
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "category": "Tax",
+        "percent": 35,
+        "amount": 1750,
+        "details": [
+          {
+            "date": "11/11",
+            "title": "Tax 1",
+            "percent": 5,
+            "amount": 10
+          },
+          {
+            "date": "11/12",
+            "title": "Tax 2",
+            "percent": 10,
+            "amount": 20
+          },
+          {
+            "date": "11/13",
+            "title": "Tax 3",
+            "percent": 10,
+            "amount": 20
+          },
+          {
+            "date": "11/14",
+            "title": "Tax 4",
+            "percent": 10,
+            "amount": 20
+          }
+        ]
+      }
+    ],
+    "income": [
+      {
+        "category": "Income",
+        "percent": 30,
+        "amount": 3000,
+        "details": [
+          {
+            "date": "11/11",
+            "title": "Income 1",
+            "percent": 5,
+            "amount": 3000
+          }
+        ]
+      },
+      {
+        "category": "Other Income",
+        "percent": 70,
+        "amount": 7000,
+        "details": [
+          {
+            "date": "11/11",
+            "title": "Other Income",
+            "percent": 5,
+            "amount": 1000
+          },
+          {
+            "date": "11/12",
+            "title": "Other Income",
+            "percent": 10,
+            "amount": 2000
+          },
+          {
+            "date": "11/13",
+            "title": "Other Income",
+            "percent": 10,
+            "amount": 1500
+          },
+          {
+            "date": "11/15",
+            "title": "Other Income",
+            "percent": 10,
+            "amount": 1200
+          },
+          {
+            "date": "11/16",
+            "title": "Other Income",
+            "percent": 10,
+            "amount": 1300
+          }
+        ]
+      }
+    ],
+    "diary": [
+      {
+        "date": "11/17",
+        "details": [
+          {
+            "title": "Panda express",
+            "category": "Food",
+            "amount": 10
+          },
+          {
+            "title": "Zara",
+            "category": "Shopping",
+            "amount": 90
+          }
+        ]
+      },
+      {
+        "date": "11/16",
+        "details": [
+          {
+            "title": "Tax",
+            "category": "Tax",
+            "amount": 20
+          },
+          {
+            "title": "Gasoline",
+            "category": "Travel",
+            "amount": 20
+          },
+          {
+            "title": "Pull & Bear",
+            "category": "Rent & Utilities",
+            "amount": 50
+          },
+          {
+            "title": "Other Income",
+            "category": "Other Income",
+            "amount": 200
+          }
+        ]
+      },
+      {
+        "date": "11/15",
+        "details": [
+          {
+            "title": "Panda express",
+            "category": "Food",
+            "amount": 10
+          },
+          {
+            "title": "Zara",
+            "category": "Shopping",
+            "amount": 90
+          },
+          {
+            "title": "Income",
+            "category": "Income",
+            "amount": 200
+          },
+          {
+            "title": "Other Income",
+            "category": "Other Income",
+            "amount": 200
+          }
+        ]
+      },
+      {
+        "date": "11/14",
+        "details": [
+          {
+            "title": "Panda express",
+            "category": "Food",
+            "amount": 10
+          },
+          {
+            "title": "Zara",
+            "category": "Shopping",
+            "amount": 90
+          }
+        ]
+      },
+      {
+        "date": "11/13",
+        "details": [
+          {
+            "title": "Panda express",
+            "category": "Food",
+            "amount": 10
+          },
+          {
+            "title": "Zara",
+            "category": "Shopping",
+            "amount": 90
+          },
+          {
+            "title": "Other Income",
+            "category": "Other Income",
+            "amount": 200
+          }
+        ]
+      },
+      {
+        "date": "11/12",
+        "details": [
+          {
+            "title": "Panda express",
+            "category": "Food",
+            "amount": 10
+          },
+          {
+            "title": "Zara",
+            "category": "Shopping",
+            "amount": 90
+          },
+          {
+            "title": "Other Income",
+            "category": "Other Income",
+            "amount": 200
+          }
+        ]
+      },
+      {
+        "date": "11/11",
+        "details": [
+          {
+            "title": "Panda express",
+            "category": "Food",
+            "amount": 10
+          },
+          {
+            "title": "Zara",
+            "category": "Shopping",
+            "amount": 90
+          },
+          {
+            "title": "Other Income",
+            "category": "Other Income",
+            "amount": 200
+          }
+        ]
+      }
+    ]
+  }
+}

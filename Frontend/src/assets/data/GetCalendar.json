@@ -1,0 +1,84 @@
+﻿{
+  "date": "November 2019",
+  "totalSpend": 5000,
+  "totalIncome": 10000,
+  "monthData": [
+    {
+      "month": "November",
+      "year": "2019",
+      "dates": [
+        {
+          "date": 26,
+          "spend": [{
+              "title": "Panda express",
+              "category": "Food",
+              "amount": 10
+            },{
+              "title": "Zara",
+              "category": "Shopping",
+              "amount": 90
+            }],
+          "income": [{
+              "title": "Salary",
+              "category": "Income",
+              "amount": 10
+            },{
+              "title": "Other Income",
+              "category": "Other Income",
+              "amount": 90
+            }]
+        }
+      ]
+    },  {
+      "month": "December",
+      "year": "2019",
+      "dates": [
+        {
+          "date": 26,
+          "spend": [{
+              "title": "Panda express",
+              "category": "Food",
+              "amount": 10
+            },{
+              "title": "Zara",
+              "category": "Shopping",
+              "amount": 90
+            },{
+              "title": "Zara",
+              "category": "Shopping",
+              "amount": 90
+            },{
+              "title": "Zara",
+              "category": "Shopping",
+              "amount": 90
+            },{
+              "title": "Zara",
+              "category": "Shopping",
+              "amount": 90
+            }],
+          "income": [{
+              "title": "Salary",
+              "category": "Income",
+              "amount": 10
+            },{
+              "title": "Other Income",
+              "category": "Other Income",
+              "amount": 90
+            },{
+              "title": "Other Income",
+              "category": "Other Income",
+              "amount": 90
+            },{
+              "title": "Other Income",
+              "category": "Other Income",
+              "amount": 90
+            },{
+              "title": "Other Income",
+              "category": "Other Income",
+              "amount": 90
+            }]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+
+    <div class="card-item card-item-{{i}}"
+         *ngFor="let item of data; let i = index;">
+        <div class="flex start middle card-item-line" *ngIf="expand || i < 2">
+            <div class="left-part flex center middle"><i class="icons icon-w-{{getIconName(item.type)}}"></i></div>
+            <div class="right-part">
+                <div class="flex space-between middle">
+                    <div class="type">{{item.type}}</div>
+                    <div class="percentage">{{getInteger(item.count / item.budget * 100)  +'%'}}</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar {{getIconName(item.type)}}"
+                         [style.width]="item.count / item.budget > 1?
+                         '100%' : getInteger(item.count / item.budget * 100) +'%'"></div>
+                </div>
+                <div class="flex space-between middle">
+                    <div class="compare flex start top">
+                        <span class="dollar">$</span>
+                        <span>
+                            {{
+                        numberWithCommas(item.count) + ' of $' +
+                        numberWithCommas(item.budget) + ' spent'
+                            }}
+                        </span>
+                    </div>
+                    <div class="over"
+                         [style.opacity]="item.count - item.budget > 0 ? 1 : 0 ">
+                        {{'$ '+ (item.count - item.budget) + ' over'}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

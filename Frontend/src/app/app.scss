@@ -1,0 +1,153 @@
+.custom-menu {
+    --width: 88%;
+}
+
+.custom-item {
+    --padding-start: 0;
+    --inner-padding-start: 0.85rem;
+    --inner-padding-top: 0.35rem;
+    --inner-padding-bottom: 0.4rem;
+    --inner-padding-end: 0.95rem;
+    --background: #ffffff;
+    --background-activated: #0099cc;
+    --background-focused: #0099cc;
+    --background-hover: #0099cc;
+    --border-width: 0;
+    --border-color: #ffffff;
+
+    .content {
+        width: 100%;
+    }
+
+    .title {
+        font-family: 'Quicksand-Bold';
+        font-size: 0.5rem;
+    }
+
+    &.active {
+        --background: #0099cc;
+
+        .title {
+            color: #ffffff;
+        }
+
+        .icon {
+            &.icon-management {
+                background: url(../assets/image/icon/w-management.png) no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+
+            &.icon-fund {
+                background: url(../assets/image/icon/w-fund.png) no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+
+            &.icon-notifications {
+                background: url(../assets/image/icon/w-notifications.png) no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+
+            &.icon-talk {
+                background: url(../assets/image/icon/w-talk.png) no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+
+            &.icon-settings {
+                background: url(../assets/image/icon/w-settings.png) no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+
+            &.icon-logout {
+                background: url(../assets/image/icon/w-logout.png) no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+    }
+
+    .icon {
+        width: 0.75rem;
+        height: 0.75rem;
+        margin-right: 0.5rem;
+        background-position: center;
+    }
+
+    .note {
+        width: 0.6rem;
+        height: 0.6rem;
+        font-size: 0.4rem;
+        font-weight: bold;
+        border-radius: 50%;
+        background: #ff9900;
+        color: #ffffff;
+    }
+}
+
+ion-app { 
+    background-size: 100% auto;
+}
+
+
+.menu-header {
+    padding: 1.2rem 0.5rem 3.3rem 0.8rem;
+    width: 100%;
+    height: 4.5rem;
+    position: relative;
+
+    img {
+        border-radius: 50%;
+        border: 0.15rem solid #0099cc;
+        width: 2.1rem;
+        height: 2.1rem;
+        margin-right: 0.45rem;
+    }
+
+    .icon {
+        width: 0.55rem;
+        height: 0.5rem;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        top: 0.9rem;
+        right: 0.5rem;
+    }
+
+    .hello {
+        font-size: 0.43rem;
+    }
+
+    .name {
+        margin-bottom: -0.2rem;
+        font-size: 0.5rem;
+        text-transform: uppercase;
+        font-family: 'Quicksand-Bold';
+    }
+}
+
+ion-content {
+    height: 100%;
+
+    .list-md {
+        padding: 0; 
+    }
+}
+
+.menu-bottom {
+    background: #f8f8f8;
+    height: 2rem;
+    padding-left: 0.9rem;
+
+    .icon-logo {
+        background-size: contain;
+        background-position: left;
+        width: 100%;
+        height: 80%;
+        display: block;
+    }
+}
+

@@ -1,0 +1,31 @@
+
+<div class="flex space-between top">
+    <ion-card class="total-card spend-card
+                          active total-card-2"
+              (click)="onClick('/transaction/spend')">
+        <div class="flex center middle">
+            <div>
+                <div class="card-title">Total Spend</div>
+                <div class="flex start top amount">
+                    <div class="dollar">$</div>
+                    <div class="money">{{ numberWithCommas(totalSpend)}}</div>
+                </div>
+            </div>
+            <i class="icon icon-cart"></i>
+        </div>
+    </ion-card>
+    <ion-card class="total-card income-card
+                          active total-card-2" 
+              (click)="onClick('/transaction/income')">
+        <div class="flex center middle">
+            <div>
+                <div class="card-title">Total Income</div>
+                <div class="flex start top amount">
+                    <div class="dollar">$</div>
+                    <div class="money">{{ numberWithCommas(totalIncome)}}</div>
+                </div>
+            </div>
+            <i class="icon icon-money-white"></i>
+        </div>
+    </ion-card>
+</div>

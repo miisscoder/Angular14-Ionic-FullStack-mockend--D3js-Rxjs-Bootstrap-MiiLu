@@ -1,0 +1,15 @@
+<ion-content>
+  <app-top-nav left="back" right="apply" (save)="onApply()"></app-top-nav>
+  <app-page-title data="Filter" ></app-page-title>
+  <div class="list">
+    <app-list-item-dropdown title="ACCOUNT"
+                            [options]="optionsBudget"
+                            [selected]="selectedBudget"
+                            (select)="onSelectBudget($event)"></app-list-item-dropdown>
+
+    <app-list-item-dropdown title="PERIOD OF TIME"
+                            [options]="optionsCategory"
+                            [selected]="selectedCategory"
+                            (select)="onClickCategory($event)"></app-list-item-dropdown> 
+  </div>
+</ion-content>

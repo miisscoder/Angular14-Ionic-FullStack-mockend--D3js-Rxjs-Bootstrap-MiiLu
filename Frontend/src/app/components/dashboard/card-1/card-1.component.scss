@@ -1,0 +1,66 @@
+.current-card {
+    height: 4.5rem;
+    background-image: linear-gradient(170deg, #08a5e1, #0382d2);
+    color: #ffffff;
+    margin: 0.65rem 0.41rem 0.35rem;
+    padding: 0;
+
+    &.red {
+        background-image: linear-gradient(170deg, #fb543f, #f93323);
+    }
+
+    .current-card-top {
+
+        .title {
+            font-size: 0.5rem;
+            color: #ffffff;
+            margin: 0.2rem 0.4rem;
+            font-weight: bold;
+        }
+
+        .icon-budget-menu {
+            background: url(../../../../assets/image/icon/budget-menu.png) no-repeat;
+            background-size: cover;
+            margin: 0.12rem 0.2rem;
+            width: 0.95rem;
+            height: 0.95rem;
+        }
+
+        .icon-budget-menu-red {
+            background: url(../../../../assets/image/icon/budget-menu-red.png) no-repeat;
+            background-size: cover;
+            margin: 0.12rem 0.2rem;
+            width: 0.95rem;
+            height: 0.95rem;
+        }
+    }
+
+    .current-card-bottom {
+        .icon-cart {
+            background: url(../../../../assets/image/icon/cart.png) no-repeat;
+            background-size: cover;
+            margin: 0.43rem;
+            width: 0.9rem;
+            height: 0.9rem;
+        }
+
+        .current-card-right-content {
+            .money {
+                font-size: 1.15rem;
+                line-height: 1.15rem;
+                margin-right: 0.43rem;
+                margin-bottom: 0.3rem;
+            }
+
+            .dollar {
+                font-size: 0.6rem;
+            }
+
+            .typical {
+                font-size: 0.44rem;
+                margin-bottom: 0.4rem;
+                margin-right: 0.43rem;
+            }
+        }
+    }
+}

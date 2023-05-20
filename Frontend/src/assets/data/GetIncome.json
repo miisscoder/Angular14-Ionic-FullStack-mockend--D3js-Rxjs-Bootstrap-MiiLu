@@ -1,0 +1,83 @@
+﻿{
+  "date": "Nov 01~30, 2017",
+  "total": 10000,
+  "data": [
+    {
+      "category": "Income",
+      "percent": 30,
+      "amount": 3000
+    },
+    {
+      "category": "Other Income",
+      "percent": 70,
+      "amount": 7000
+    }
+  ],
+  "diary": [
+    {
+      "date": "11/11",
+      "details": [
+        {
+          "title": "Income",
+          "category": "Income",
+          "amount": 3000
+        },
+        {
+          "title": "Other Income",
+          "category": "Other Income",
+          "amount": 1000
+        }
+      ]
+    },
+    {
+      "date": "11/12",
+      "details": [
+        {
+          "title": "Other Income",
+          "category": "Other Income",
+          "amount": 2000
+        }
+      ]
+    },
+    {
+      "date": "11/13",
+      "details": [
+        {
+          "title": "Other Income",
+          "category": "Other Income",
+          "amount": 1500
+        }
+      ]
+    },
+    {
+      "date": "11/14",
+      "details": [
+      ]
+    },
+    {
+      "date": "11/15",
+      "details": [
+        {
+          "title": "Other Income",
+          "category": "Other Income",
+          "amount": 1200
+        }
+      ]
+    },
+    {
+      "date": "11/16",
+      "details": [
+        {
+          "title": "Other Income",
+          "category": "Other Income",
+          "amount": 1300
+        }
+      ]
+    },
+    {
+      "date": "11/17",
+      "details": [
+      ]
+    }
+  ]
+}

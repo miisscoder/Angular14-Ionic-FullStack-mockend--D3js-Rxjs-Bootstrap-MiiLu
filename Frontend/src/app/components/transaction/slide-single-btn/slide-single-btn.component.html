@@ -1,0 +1,13 @@
+
+<ion-card class="total-card {{type}}-card active
+              flex space-between middle"
+          (click)="onType()">
+  <div class="flex start middle">
+    <i class="icon {{getIcon()}}"></i>
+    <div class="card-title">Total <span class="type">{{type}}</span></div>
+  </div>
+  <div class="flex center top amount">
+    <div class="dollar">$</div>
+    <div class="money">{{ numberWithCommas(total)}}</div>
+  </div>
+</ion-card>

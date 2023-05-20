@@ -1,0 +1,82 @@
+
+ion-card {
+    margin: 0;
+    padding: 0.3rem 0 0.28rem;
+    background-color: #f8f8f8;
+    box-shadow: none;
+    width: calc(50% - 1.6rem);
+
+
+    .card-title {
+        font-size: 0.3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .amount { 
+        margin-top: 0.18rem;
+
+
+        .dollar {
+            font-size: 0.25rem;
+            font-weight: normal;
+        }
+
+        .money {
+            font-size: 0.75rem;
+            line-height: 0.8rem;
+            font-weight: normal;
+        }
+    }
+
+    &.active {
+        -webkit-box-shadow: 0 0 0.02rem rgba(0,0,0,.12);
+        box-shadow: 0 0 0.02rem rgba(0,0,0,.12);
+
+        &.spend-card {
+            background-color: #fb543f;
+        }
+
+        &.income-card {
+            background-color: #08a5e1;
+        }
+
+        .card-title {
+            color: #ffffff;
+        }
+
+        .dollar {
+            color: #ffffff;
+        }
+
+        .money {
+            color: #ffffff;
+        }
+    }
+
+    &.total-card-2 {
+        margin-top: 0.21rem;
+        width: calc(50% - 0.21rem);
+        padding: 0.3rem 0;
+
+        .icon {
+            display: block;
+            width: 0.85rem;
+            height: 0.85rem;
+            margin-left: 0.42rem;
+            background-position: center;
+        }
+
+        .card-title {
+        }
+
+
+        .dollar {
+            color: #ffffff;
+        }
+
+        .money {
+            color: #ffffff;
+        }
+    }
+}

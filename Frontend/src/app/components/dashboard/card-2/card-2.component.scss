@@ -1,0 +1,29 @@
+
+
+.warning-card {
+    margin: 0 0.41rem 0.35rem;
+    height: 1.9rem;
+
+    .icon-warning {
+        background: url(../../../../assets/image/icon/warning.png) no-repeat;
+        background-size: contain;
+        display: block;
+        width: 0.8rem;
+        height: 0.8rem;
+        margin-right: 0.4rem;
+        margin-left: 0.6rem;
+    }
+
+    .text-right {
+        font-size: 0.4rem;
+        width: calc(100% - 0.6 * 3rem);
+        padding-right: 0.77rem;
+
+        .text-warning {
+            color: #ff6633;
+            text-decoration: none;
+            margin-left: 0.2rem;
+            font-weight: bold;
+        }
+    }
+}

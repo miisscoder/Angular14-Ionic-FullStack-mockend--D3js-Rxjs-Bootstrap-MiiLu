@@ -1,0 +1,32 @@
+<div class="sliding-cover"
+     (click)="slideMenuHide()"></div>
+
+<div class="bottom-sliding-content">
+  <ion-card class="bottom-card">
+    <ion-card-content>
+      <div class="tr th flex start middle">
+        <div class="td td-0 flex center middle">
+          <i class="icon icon-{{getIconName(data?.category)}}"></i>
+        </div>
+        <div class="td td-1">{{data?.category}}</div>
+        <div class="td td-2">{{data?.percent}}%</div>
+        <div class="td td-3">${{data?.amount}}</div>
+      </div>
+      <app-slide-1-modal-item [data]="data?.details"></app-slide-1-modal-item>
+      <div *ngFor="let item of data?.details; let i = index;" class="it">
+        <div class="flex start middle tr tr-{{i}} " *ngIf="i < 3">
+          <div class="td td-0 ">{{item.date}}</div>
+          <div class="flex start middle sub-tr">
+            <div class="td td-1">{{item.title}}</div>
+            <div class="td td-2">{{item.percent}}%</div>
+            <div class="td td-3">${{item.amount}}</div>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:;" class="view">View more transactions</a>
+    </ion-card-content>
+  </ion-card>
+  <a href="javascript:;" class="close-btn flex center middle" (click)="slideMenuHide()">
+    <i class="icon-close-s"></i>
+  </a>
+</div>

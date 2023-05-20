@@ -1,0 +1,89 @@
+@import 'src/styles/font'; 
+
+.week-section {
+  margin: 0.8rem 0.42rem;
+  margin-top: 0.35rem;
+  height: calc(100% - 7.5rem);
+  overflow: hidden;
+
+  .week-title {
+    border-bottom: 0.01rem solid #cccccc;
+    padding: 0 0.1rem 0.5rem;
+
+    .weekday {
+      color: #939393;
+      font-weight: bold;
+      line-height: 0.45rem;
+      font-size: 0.36rem;
+      width: calc(100% / 7);
+      padding-left: 0.05rem;
+    }
+  }
+
+  .months {
+    height: calc(100% - 0.6rem);
+    overflow-y: auto;
+    padding-top: 0.3rem;
+
+    .week {
+      padding: 0 0.1rem 0.05rem 0.1rem;
+
+      .month {
+        color: #494949;
+        font-size: 0.5rem;
+        padding-bottom: 0.3rem;
+        font-weight: bold;
+      }
+
+      .flex {
+        overflow: auto;
+      }
+
+      .weekday {
+        width: calc(100% / 7);
+        color: #484848;
+        font-weight: normal;
+        font-size: 0.36rem;
+        height: 1.8rem;
+        padding-left: 0.05rem;
+
+        &.active {
+          background-color: #e6f6fc;
+          position: relative;
+          overflow: visible;
+
+          .date {
+            font-family: 'Quicksand-Bold';
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 0.3rem;
+            bottom: 0;
+            top: -0.3rem;
+            background-color: #e6f6fc;
+            z-index: 2;
+          }
+        }
+
+        .income {
+          color: #0099cc;
+          font-family: 'Quicksand-Bold';
+        }
+
+        .spend {
+          color: #ff6633;
+          font-family: 'Quicksand-Bold';
+        }
+      }
+
+
+      &.month-weeks {
+        color: #494949;
+      }
+    }
+  }
+}

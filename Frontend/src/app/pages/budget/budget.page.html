@@ -1,0 +1,9 @@
+<ion-content>
+    <app-top-nav link='/budget/alert' linkTitle="Set Alert" left = "menu" right="multi-1"></app-top-nav>
+    <app-page-title data="My Budget"></app-page-title>
+    <app-card-1 [data]="data?.income"></app-card-1>
+    <app-card-2 [title]="'My Spend'" [data]="data?.spend"></app-card-2>
+    <app-card-2 [title]="'My Borrowings'" [data]="data?.borrowings"></app-card-2>
+    <app-card-2 [title]="'My Protection'" [data]="data?.protection"></app-card-2>
+    <app-card-3 [title]="'My Growth'" [data]="data?.growth"></app-card-3>
+</ion-content>

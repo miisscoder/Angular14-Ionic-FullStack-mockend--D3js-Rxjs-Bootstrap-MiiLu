@@ -1,0 +1,13 @@
+{
+  "category": [
+    "Travel",
+    "Transport",
+    "Shopping",
+    "Electronic Products"
+  ],
+  "dateStart": "2010-01-01",
+  "dateEnd": "2020-01-01",
+  "completionStart": "2010-01-01",
+  "completionEnd": "2030-01-01",
+  "fundingAccount": [ "123123456778890", "233123456778890" ]
+}

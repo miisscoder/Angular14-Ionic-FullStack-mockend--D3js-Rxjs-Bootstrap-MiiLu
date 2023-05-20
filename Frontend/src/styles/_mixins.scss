@@ -1,0 +1,23 @@
+
+// custom attribute mixin
+@mixin attribute-styles($attr, $value) {
+    &[#{$attr}='#{$value}'] {
+        @content;
+    }
+}
+
+// set element clickable
+@mixin clickable($effect: false, $selectable: none) {
+    cursor: pointer;
+    user-select: $selectable;
+
+    @if($effect) {
+        &:hover {
+            opacity: .8;
+        }
+
+        &:active {
+            opacity: .6;
+        }
+    }
+}

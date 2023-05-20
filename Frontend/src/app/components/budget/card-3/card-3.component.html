@@ -1,0 +1,20 @@
+
+
+<ion-card class="flex column space-between chart-content">
+    <div class="flex space-between middle
+              card-title-content">
+        <div class="flex start middle">
+            <i class="icon icon-my-growth"></i>
+            <div class="card-title">{{title}}</div>
+        </div>
+        <div class="flex end bottom">
+            <div class="card-money">
+                {{ '$'+ numberWithCommas(data?.count) +' of $'
+                    + numberWithCommas(data?.budget) +' '
+                }}
+            </div>
+            <div class="spent">saved</div>
+        </div>
+    </div>
+    <app-time-line-chart [data]="data?.items" [widthC]="widthC" [heightC]="heightC"></app-time-line-chart>
+</ion-card>        

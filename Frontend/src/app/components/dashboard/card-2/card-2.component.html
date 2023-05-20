@@ -1,0 +1,11 @@
+ 
+<ion-card *ngIf="data?.budgetSet && data?.warning"
+          class="warning-card flex start middle"
+          (click)="modalShow()">
+    <i class="icon-warning"></i>
+    <div class="text-right">
+        <span *ngIf="data?.warning === 'likely-to'">You are likely to go out of budget this month.</span>
+        <span *ngIf="data?.warning === 'out-of-budget'">You are out of budget this month.</span>
+        <a href="javascript:;" class="text-warning">Tell me why?</a>
+    </div>
+</ion-card> 

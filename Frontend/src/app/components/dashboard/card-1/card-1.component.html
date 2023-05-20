@@ -1,0 +1,26 @@
+
+<ion-card class="current-card flex column space-between"
+          [ngClass]="{'red': data?.warning}">
+    <div class="flex space-between top current-card-top">
+        <div class="title">MY CURRENT <br />SPEND</div>
+        <a href="javascript:;" class="icon-budget-menu" *ngIf="!data?.warning"
+           (click)="goToTransaction()">
+        </a>
+        <a href="javascript:;" class="icon-budget-menu-red" *ngIf="data?.warning"
+           (click)="goToTransaction()">
+        </a>
+    </div>
+    <div class="flex space-between bottom current-card-bottom">
+        <i class="icon-cart"></i>
+        <div class="current-card-right-content">
+            <div class="flex end top">
+                <div class="dollar">$</div>
+                <div class="money">{{data?.currentSpend}}</div>
+            </div>
+            <div class="typical flex end middle">
+                <div>Typical Spend $</div>
+                <div>{{data?.typicalSpend}}</div>
+            </div>
+        </div>
+    </div>
+</ion-card>

@@ -1,0 +1,32 @@
+<ion-content> 
+    <app-top-nav left="cancel" right="save" (save)="onSave()"></app-top-nav>
+    <app-page-title data="Set Goal" ></app-page-title>
+    <ion-list>
+      <app-list-item-text title="NAME" [data]="items['name']"></app-list-item-text>
+      <app-list-item-dropdown title="CATEGORY"
+                              [options]="optionsCategory"
+                              [selected]="selectedCategory"
+                              (select)="onSelectCategory($event)"></app-list-item-dropdown>
+
+      <app-list-item-text-amount title="AMOUNT" [data]="items['amount']"></app-list-item-text-amount>
+      <app-list-item-date-picker title="START DATE" [data]="items['startDate']"></app-list-item-date-picker>
+      <div class="flex space-between middle">
+        <div class="ion-item half">
+          <app-list-item-text title="COMPLETION MONTH" [data]="items['completionMonth']"></app-list-item-text>
+        </div>
+        <div class="ion-item half">
+          <app-list-item-text title="COMPLETION YEAR" [data]="items['completionYear']"></app-list-item-text>
+        </div>
+      </div>
+      <app-list-item-dropdown title="FUNDING ACCOUNT"
+                              [options]="optionsFundingAccount"
+                              [selected]="selectedFundingAccount"
+                              (select)="onSelectFundingAccount($event)"></app-list-item-dropdown>
+ 
+    </ion-list>
+
+    <div class="set-bottom flex space-between middle">
+        <div class="monthly">Monthly Contributuion</div>
+        <div class="contribution">{{items['amount']}}</div>
+    </div>
+</ion-content>

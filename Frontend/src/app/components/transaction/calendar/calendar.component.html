@@ -1,0 +1,49 @@
+
+<div class="week-section">
+  <div class="flex space-between middle
+             week week-title">
+    <div class="weekday">S</div>
+    <div class="weekday">M</div>
+    <div class="weekday">T</div>
+    <div class="weekday">W</div>
+    <div class="weekday">T</div>
+    <div class="weekday">F</div>
+    <div class="weekday">S</div>
+  </div>
+  <div *ngIf="!slideShow" class="months">
+    <div *ngFor="let itemM of monthData; let i = index"
+         class="week month-weeks">
+      <div class="month">{{itemM['month']}}</div>
+      <div class="flex wrap">
+        <div *ngFor="let itemD of itemM['days']; let iD = index"
+             class="weekday"
+             (click)="popDayDetail(itemD, i, iD)">
+          <div *ngIf="itemD['date'] !== -1" class="date">{{itemD['date']}}</div>
+          <div class="income" *ngIf="getAmountSum(itemD['income']) !== 0">
+            ${{getAmountSum(itemD['income'])}}
+          </div>
+          <div class="spend" *ngIf="getAmountSum(itemD['spend']) !== 0">
+            ${{getAmountSum(itemD['spend'])}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="slideShow" class="months">
+    <div class="week month-weeks">
+      <div class="flex wrap">
+        <div *ngFor="let itemD of selectedMonthData?.days; let iD = index"
+             [ngClass]="{ 'active': selectedDayData?.date === itemD['date']}"
+             class="weekday">
+          <div *ngIf="itemD['date'] !== -1" class="date">{{itemD['date']}}</div>
+          <div class="income" *ngIf="getAmountSum(itemD['income']) !== 0">
+            ${{getAmountSum(itemD['income'])}}
+          </div>
+          <div class="spend" *ngIf="getAmountSum(itemD['spend']) !== 0">
+            ${{getAmountSum(itemD['spend'])}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

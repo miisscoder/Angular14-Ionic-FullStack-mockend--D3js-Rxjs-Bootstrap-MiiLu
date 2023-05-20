@@ -1,0 +1,35 @@
+
+
+.set-budget-card {
+  margin: 0 0.41rem;
+  text-align: center;
+  padding-top: 0.9rem;
+
+  .icon-money {
+    width: 1.2rem;
+    height: 0.9rem;
+    background-size: auto 100%;
+    margin: 0 auto;
+  }
+
+  .text-set {
+    margin-top: 0.4rem;
+    font-size: 0.42rem;
+    text-align: center;
+  }
+
+  .btn-blue {
+    width: 45%;
+    height: 1.4rem;
+    border-radius: 0.05rem;
+    background-color: #0099cc;
+    -webkit-box-shadow: 0 0 0.02rem rgba(0,0,0,.1);
+    box-shadow: 0 0 0.02rem rgba(0,0,0,.1);
+    color: #ffffff;
+    line-height: 1.4rem;
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin: 0.4rem auto 0.75rem;
+  }
+}

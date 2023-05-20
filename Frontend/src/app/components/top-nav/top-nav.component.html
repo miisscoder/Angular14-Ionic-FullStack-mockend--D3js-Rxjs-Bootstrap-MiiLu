@@ -1,0 +1,31 @@
+<div class="flex space-between bottom top-nav">
+  <i class="icon-menu-button" (click)="menuOpen()" *ngIf="left === 'menu'"></i>
+  <i class="icon-back" (click)="onBack()" *ngIf="left === 'back'"></i>
+  <a href="javascript:;" class="left-nav" (click)="onBack()"
+     *ngIf="left === 'cancel'">Cancel</a>
+
+
+  <div class="flex end bottom right-nav" *ngIf="right === 'back'">
+    <a (click)="onBack()">Back</a>
+  </div>
+  <div class="flex end bottom right-nav" *ngIf="right === 'multi-1'">
+    <a routerLink="{{link}}">{{linkTitle}}</a>
+    <span>.</span>
+    <a (click)="onBack()">Back</a>
+  </div>
+  <div class="flex end bottom right-nav" *ngIf="right === 'save'">
+    <a (click)="onSave()">Save</a>
+  </div>
+
+
+  <div class="flex end middle" *ngIf="right === 'filter'">
+    <a href="javascript:;" routerLink="/transaction/calendar"><i class="icon-calendar"></i></a>
+    <a href="javascript:;" routerLink="/transaction/filter"><i class="icon-filter"></i></a>
+  </div>
+
+
+  <div class="flex end middle right-nav" *ngIf="right === 'apply'">
+    <a href="javascript:;" (click)="onSave()">Apply</a>
+  </div>
+</div>
+

@@ -1,0 +1,47 @@
+<ion-app>
+    <ion-menu type="overlay" menuId="side" contentId="menuContent"
+              class="custom-menu">
+        <div class="flex space-between top menu-header">
+            <div class="flex start middle">
+                <img [src]="pp?.image">
+                <div>
+                    <div class="hello">Hello,</div>
+                    <div class="name">{{pp?.name}}</div>
+                </div>
+            </div>
+            <i class="icon icon-back-menu" (click)="menuClose()"></i>
+        </div>
+        <ion-content>
+            <ion-list>
+                <ion-menu-toggle auto-hide="false"
+                                 *ngFor="let p of appPages">
+                    <ion-item [routerLink]="[p.url]"
+                              routerLinkActive="active"
+                              class="custom-item"
+                              detailIcon="false">
+                        <div class="flex space-between middle content">
+                            <div class="flex start middle">
+                                <i class="icon icon-{{p.icon}}"></i>
+                                <div class="title">
+                                    {{p.title}}
+                                </div>
+                            </div>
+                            <div *ngIf="p.title === 'Notifications'"
+                                 class="note flex center middle">
+                                {{pp?.notifications}}
+                            </div>
+                        </div>
+                    </ion-item>
+                </ion-menu-toggle>
+            </ion-list>
+        </ion-content>
+        <div class="menu-bottom flex start middle">
+            <i class="icon icon-logo"></i>
+        </div>
+    </ion-menu>
+    <!--menu-->
+    <ion-router-outlet id="menuContent"></ion-router-outlet>
+</ion-app>
+<!-- toast outlet -->
+<!--<app-toast-outlet></app-toast-outlet>-->
+

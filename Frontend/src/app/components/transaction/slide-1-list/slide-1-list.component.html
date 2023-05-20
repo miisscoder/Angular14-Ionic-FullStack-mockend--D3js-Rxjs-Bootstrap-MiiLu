@@ -1,0 +1,25 @@
+<div class="table">
+    <div class="tr flex start middle">
+        <div class="th th-0"></div>
+        <div *ngFor="let itemColumn of columns; let i = index"
+             class="th th-{{i + 1}} flex start middle"
+             (click)="onSort(itemColumn['prop'], itemColumn['sort'])">
+            <span>{{itemColumn['title']}}</span>
+            <i class="icon-sort"
+               *ngIf="itemColumn['sort']"
+               [ngStyle]="{'transform' :
+                               itemColumn['sortDirectionS'] === 'asc'?
+                                'rotate(180deg)' : 'rotate(0deg)'}"></i>
+        </div>
+    </div>
+    <div class="tr flex start middle"
+         *ngFor="let item of data"
+         (click)="onClickRow(item.category)">
+        <div class="td td-0 flex center middle">
+            <i class="icon icon-{{getIconName(item.category)}}"></i>
+        </div>
+        <div class="td td-1">{{item['category']}}</div>
+        <div class="td td-2">{{item['percent']}}%</div>
+        <div class="td td-3">${{item['amount']}}</div>
+    </div>
+</div>

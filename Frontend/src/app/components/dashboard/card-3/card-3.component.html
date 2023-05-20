@@ -1,0 +1,14 @@
+
+<ion-card *ngIf="data?.budgetSet"
+          class="battery-card">
+    <div class="bk">
+    </div>
+    <div class="flex end middle percentage" [ngStyle]="{'width': getNumber(data?.percentage) >
+        0 ? data?.percentage: '0',
+        'background-color': ( getNumber(data?.percentage) > 25 ?
+        'rgba(0, 135, 204, 0.9)': 'rgba(251, 84, 63, 0.8)') }">
+        <div class="number"
+             [ngStyle]="{'color': getNumber(data?.percentage) > 0 ? '#ffffff' :
+                 '#ff6633' }">{{data?.percentage}}</div>
+    </div>
+</ion-card>

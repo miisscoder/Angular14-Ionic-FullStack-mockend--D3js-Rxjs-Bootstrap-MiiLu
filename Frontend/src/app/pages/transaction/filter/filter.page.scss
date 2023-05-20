@@ -1,0 +1,218 @@
+@import 'src/styles/font';
+/*ion-content*/
+ion-content {
+    position: relative;
+     
+
+    .list {
+        margin: 0 0.42rem;
+        color: #484848;
+
+        .list-item {
+            padding-top: 0.5rem;
+
+            ion-label {
+                font-size: 0.35rem;
+                line-height: 0.35rem;
+                display: block;
+                margin-bottom: 0.1rem;
+                font-weight: 900;
+            }
+
+            .dropdown-controller {
+                font-size: 0.5rem;
+                line-height: 0.5rem;
+                border-bottom:0.01rem solid #e4e4e4;
+                padding-bottom: 0.4rem;
+                padding-top: 0.4rem;
+
+                .icon-dropdown {
+                    width: 0.3rem;
+                    height: 0.3rem;
+                    background-size: 100% auto;
+                    background-position: center;
+                }
+            }
+
+            .dropdown-content {
+                font-size: 0.5rem;
+                line-height: 0.5rem;
+                padding-left: 0.42rem;
+                padding-top: 0.45rem;
+                padding-bottom: 0.3rem;
+
+                .icon-check {
+                    width: 0.4rem;
+                    height: 0.4rem;
+                    background-size: contain;
+                    background-position: center;
+                }
+
+                .dropdown-content-item {
+                    height: 1rem;
+                    line-height: 1rem;
+                }
+            }
+        }
+
+        ion-range {
+            padding: 0;
+
+            .range-bar {
+                height:  0.2rem;
+                border-radius:  0.2rem;
+                overflow: hidden;
+            }
+
+            .range-bar-active {
+                background-color: #ffa700;
+                height: 100%;
+            }
+        }
+    }
+}
+
+ion-datetime {
+    display: none;
+}
+
+.sliding-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    background: #ffffff;
+    opacity: 0.75;
+}
+
+/*bottom-sliding-content*/
+.bottom-sliding-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  -webkit-transition: top 1s;
+  transition: top 1s;
+  padding-bottom: 0.55rem;
+
+  .close-btn {
+    position: absolute;
+    bottom: 0.20rem;
+    right: calc(50% - 0.25rem);
+    z-index: 11;
+    width: 0.45rem;
+    height: 0.45rem;
+    background: rgba(0,0,0,0.25);
+    border-radius: 0.50rem;
+  }
+
+  .bottom-card {
+    position: relative;
+    background: #ffffff;
+
+    ion-card-content {
+      padding: 0;
+      line-height: normal;
+
+      .view {
+        margin: 0.1rem auto 0.4rem;
+        text-align: center;
+        font-size: 0.4rem;
+        font-weight: bold;
+        color: #08a5e1;
+        display: block;
+      }
+
+
+      .tr {
+        &.th {
+          border-bottom: 0.01rem solid #e4e4e4;
+        }
+
+        .sub-tr {
+          width: 85%;
+
+          .td-1 {
+            width: calc( 45% / 0.85 );
+            text-align: left;
+            font-size: 0.15rem;
+            text-transform: uppercase;
+            color: #494949;
+            font-weight: bold;
+            border-bottom: 0.01rem solid #e4e4e4;
+            padding: 0.13rem 0;
+          }
+
+          .td-2 {
+            width: calc( 20% / 0.85 );
+            font-size: 0.15rem;
+            color: #939393;
+            text-align: center;
+            border-bottom: 0.01rem solid #e4e4e4;
+            padding: 0.13rem 0;
+          }
+
+          .td-3 {
+            width: calc(20% / 0.85 );
+            text-align: right;
+            font-size: 0.15rem;
+            color: #484848;
+            padding-right: 0;
+            margin-right:  0.2rem;
+            border-bottom: 0.01rem solid #e4e4e4;
+            padding: 0.13rem 0;
+          }
+        }
+
+        .td-0 {
+          width: 15%;
+          font-size: 0.8em;
+          color: #939393;
+          text-align: center;
+        }
+
+        .td-1 {
+          width: 45%;
+          padding: 0.48rem 0 0.48rem 0.08rem;
+          text-align: left;
+          font-size: 0.16rem;
+          color: #494949;
+          font-weight: bold;
+        }
+
+        .td-2 {
+          width: 20%;
+          padding: 0.48rem 0;
+          font-size: 0.16rem;
+          color: #939393;
+          text-align: center;
+        }
+
+        .td-3 {
+          width: 20%;
+          text-align: right;
+          padding: 0.48rem 0.2rem 0.48rem 0;
+          font-size: 0.16rem;
+          color: #484848;
+        }
+
+        .icon {
+          width: 0.35rem;
+          height: 0.35rem;
+        }
+
+
+        &.tr-2 {
+          .sub-tr {
+            .td-1, .td-2, .td-3 {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

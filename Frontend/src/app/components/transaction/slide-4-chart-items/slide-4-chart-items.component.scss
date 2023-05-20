@@ -1,0 +1,23 @@
+
+.icons {
+  border-top:0.01rem solid #cccccc;
+
+  height: 2.5rem;
+
+  .icon-box {
+    width:18vw;
+    .icon-type {
+      width: 0.9rem;
+      height: 0.9rem;
+      display: block;
+      margin: 0 auto 0.02rem;
+    }
+
+    .type-txt {
+      font-size: 0.36rem;
+      text-transform: uppercase;
+      font-weight: bold; 
+      text-align:center; 
+    }
+  }
+}

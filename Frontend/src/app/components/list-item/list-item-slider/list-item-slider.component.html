@@ -1,0 +1,7 @@
+<div class="list-item">
+    <ion-label>NOTIFY ME WHEN MY BUDGET</ion-label>
+    <div class="slider-value">{{sliderValue + '%'}}</div>
+    <ion-range min="0" max="100" step="1"
+               [value]="sliderValue"
+               (ionChange)="onChange($event)"></ion-range>
+</div>

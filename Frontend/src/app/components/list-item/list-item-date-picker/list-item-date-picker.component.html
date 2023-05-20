@@ -1,0 +1,17 @@
+<div class="ion-item date">
+    <i class="icon-dropdown"></i>
+    <ion-label class="date">{{title}}</ion-label>
+    <div class="button">
+        <ion-datetime-button datetime="datetime"></ion-datetime-button>
+        <i class="icon-dropdown"></i>
+    </div>
+    <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+            <ion-datetime id="datetime" displayFormat="MM/DD/YYYY"
+                          min="1989-06-04" max="2050-08-23"
+                          presentation="date"
+                          placeholder="Select Date"
+                          [(ngModel)]="data" ></ion-datetime>
+        </ng-template>
+    </ion-modal>
+</div> 

@@ -1,0 +1,21 @@
+@import 'src/styles/font';
+/*ion-content*/
+ion-content {
+    position: relative;
+
+    .icon-menu-button {
+        background: url(../../../assets/image/icon/menu-button-blue.png) no-repeat;
+        background-size: contain;
+        width: 5%;
+        height: 2.3%;
+        display: block;
+        margin: 0.16rem;
+    }
+
+    .page-title {
+        color: #333333;
+        font-size: 1.8em;
+        font-weight: bold;
+        margin: 2% 4% 0;
+    }
+}

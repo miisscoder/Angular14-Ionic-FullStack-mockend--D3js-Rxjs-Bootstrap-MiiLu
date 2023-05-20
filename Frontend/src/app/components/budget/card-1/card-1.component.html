@@ -1,0 +1,21 @@
+<ion-card class="flex column space-between income-card">
+    <div class="flex space-between middle
+              card-title-content">
+        <div class="flex start middle">
+            <i class="icon-money-black"></i>
+            <div class="card-title">My Income</div>
+        </div>
+        <div class="flex end top">
+            <div class="dollar">$</div>
+            <div class="card-money">{{numberWithCommas(data?.income)}}</div>
+        </div>
+    </div>
+    <div class="flex space-between middle card-content">
+        <div class="title">Salary</div>
+        <div class="money">${{numberWithCommas(data?.salary)}}</div>
+    </div>
+    <div class="flex space-between middle">
+        <div class="title">Other Income</div>
+        <div class="money">${{numberWithCommas(data?.otherIncome)}}</div>
+    </div>
+</ion-card>

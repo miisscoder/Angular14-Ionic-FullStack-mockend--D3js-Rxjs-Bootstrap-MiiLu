@@ -1,0 +1,34 @@
+
+.list-item {
+  padding-top: 0.5rem;
+
+  ion-range {
+    --height: 0.23rem;
+    --bar-height: 0.23rem;
+    --bar-border-radius: 0.23rem;
+    --bar-background: #f8f8f8;
+    --bar-background-active: #ff8500;
+    --bar-background-active: -webkit-linear-gradient(left, #ff8500, #fda500); /* Safari 5.1 - 6.0 */
+    --bar-background-active: -o-linear-gradient(right, #ff8500, #fda500); /* Opera 11.1 - 12.0 */
+    --bar-background-active: -moz-linear-gradient(right, #ff8500, #fda500); /* Firefox 3.6 - 15 */
+    --bar-background-active: linear-gradient(to right, #ff8500, #fda500); /* normal */
+    --knob-size: 0.33rem;
+    --knob-background: #ffffff;
+    --knob-box-shadow: 0 0 0.03rem 0.03rem rgba(0,0,0,0.1);
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  ion-label {
+    font-size: 0.36rem;
+    line-height: 0.36rem;
+    display: block;
+    margin-bottom: 0.4rem;
+    font-family: 'Quicksand-Bold';
+  }
+
+  .slider-value {
+    font-size: 0.5rem;
+    padding-bottom: 0.25rem;
+  }
+}

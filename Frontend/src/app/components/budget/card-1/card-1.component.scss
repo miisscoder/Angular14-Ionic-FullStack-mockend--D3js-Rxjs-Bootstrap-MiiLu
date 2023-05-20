@@ -1,0 +1,49 @@
+
+.income-card {
+    text-align: left;
+    padding: 0.42rem 0.42rem 0.45rem;
+    margin: 0 0.42rem 0.5rem;
+
+    .icon-money-black {
+        width: 0.7rem;
+        height: 0.7rem;
+        background-size: contain;
+        background-position: center;
+        margin-right: 0.2rem;
+    }
+
+    .card-title-content {
+        margin-bottom: 0.7rem;
+
+        .card-title {
+            font-size: 0.5rem;
+            font-weight: bold;
+            color: #484848;
+            font-family: 'Quicksand-Bold';
+        }
+
+        .card-money {
+            font-size: 0.5rem;
+        }
+
+        .dollar {
+            font-size: 0.3rem;
+        }
+    }
+
+    .card-content {
+        margin-bottom: 0.4rem;
+    }
+
+    .title {
+        font-size: 0.36rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #484848;
+        font-family: 'Quicksand-Bold';
+    }
+
+    .money {
+        font-size: 0.36rem;
+    }
+}

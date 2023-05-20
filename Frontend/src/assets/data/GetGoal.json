@@ -1,0 +1,30 @@
+[
+  {
+    "name": "BMW Car",
+    "category": "Transport",
+    "amount": 2550,
+    "completionDate": "Dec 1, 2020",
+    "goal": 10100
+  },
+  {
+    "name": "Cancun Holidays",
+    "category": "Travel",
+    "amount": 450,
+    "completionDate": "Dec 1, 2019",
+    "goal": 900
+  },
+  {
+    "name": "Iphone X",
+    "category": "Electronic Products",
+    "amount": 300,
+    "completionDate": "Dec 1, 2018",
+    "goal": 1200
+  },
+  {
+    "name": "Cancun Holidays",
+    "category": "Shopping",
+    "amount": 250,
+    "completionDate": "Dec 1, 2019",
+    "goal": 500
+  }
+]

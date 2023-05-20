@@ -1,0 +1,135 @@
+
+
+.card-item {
+
+  .card-item-line {
+    border-top: 0.01rem solid #e4e4e4;
+    padding: 0.25rem 0 0.4rem;
+
+
+    .left-part {
+      margin-right: 0.45rem;
+
+      .icons {
+        display: block;
+        border-radius: 0.05rem;
+        width: 1.35rem;
+        height: 1.35rem;
+
+        &.icon-w-rent-utilities {
+          background-color: #33cc99;
+          background-size: 66.66% 66.66%;
+          background-position: center;
+        }
+
+        &.icon-w-travel {
+          background-color: #ff9900;
+          background-size: 66% 60%;
+          background-position: center;
+        }
+
+        &.icon-w-food {
+          background-color: #ff6633;
+          background-size: 45% 66%;
+          background-position: center;
+        }
+
+        &.icon-w-shopping {
+          background-color: #cc33cc;
+          background-size: 55% 66%;
+          background-position: center;
+        }
+
+        &.icon-w-tax {
+          background-color: #0099cc;
+          background-size: 45% 45%;
+          background-position: center;
+        }
+      }
+    }
+
+    .right-part {
+      width: calc(100% - 1.8rem);
+
+      .type {
+        font-size: 0.36rem;
+        font-family: 'Quicksand-Bold';
+        text-transform: uppercase;
+      }
+
+      .percentage {
+        font-size: 0.36rem;
+      }
+
+      .progress {
+        height: 0.23rem;
+        width: 100%;
+        background-color: #f8f8f8;
+        margin: 0.32rem 0 0.1rem;
+        border-radius: 0.15rem;
+
+        .progress-bar {
+          height: 100%;
+          width: 100%;
+          border-radius: 0.4rem;
+
+          &.rent-utilities {
+            background-color: #ff9900;
+            background: -webkit-linear-gradient(left, #ff8800, #ffaa00); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right, #ff8800, #ffaa00); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, #ff8800, #ffaa00); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right, #ff8800, #ffaa00); /* normal */
+          }
+
+          &.travel {
+            background-color: #ff6633;
+            background: -webkit-linear-gradient(left, #ff5533, #ff7733); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right, #ff5533, #ff7733); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, #ff5533, #ff7733); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right, #ff5533, #ff7733); /* normal */
+          }
+
+
+          &.food {
+            background-color: #cc33cc;
+            background: -webkit-linear-gradient(left, #cc22cc, #cc44cc); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right, #cc22cc, #cc44cc); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, #cc22cc, #cc44cc); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right, #cc22cc, #cc44cc); /* normal */
+          }
+
+          &.shopping {
+            background-color: #0099cc;
+            background: -webkit-linear-gradient(left, #0088cc, #00aacc); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right, #0088cc, #00aacc); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, #0088cc, #00aacc); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right, #0088cc, #00aacc); /* normal */
+          }
+
+
+          &.tax {
+            background-color: #33cc99;
+            background: -webkit-linear-gradient(left, #33bb99, #33dd99); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right, #33bb99, #33dd99); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, #33bb99, #33dd99); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right, #33bb99, #33dd99); /* normal */
+          }
+        }
+      }
+
+      .compare {
+        font-size: 0.36rem;
+
+        .dollar {
+          font-size: 0.2rem;
+        }
+      }
+    }
+  }
+
+  &.card-item-0 {
+    .card-item-line {
+      border-top: none;
+    }
+  }
+}
